@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "/Users/simgroup/Flutter Code/gaweid2/build/flutter_barcode_scanner/intermediates/res/merged/release/animator/mtrl_fab_transformation_sheet_expand_spec.xml",
+        "source": "/Users/simgroup/.gradle/caches/transforms-3/8e67402e3cd4d2bdd584a9c93fd417ff/transformed/material-1.0.0/res/animator/mtrl_fab_transformation_sheet_expand_spec.xml"
+    },
+    {
+        "merged": "/Users/simgroup/Flutter Code/gaweid2/build/flutter_barcode_scanner/intermediates/res/merged/release/animator/mtrl_fab_hide_motion_spec.xml",
+        "source": "/Users/simgroup/.gradle/caches/transforms-3/8e67402e3cd4d2bdd584a9c93fd417ff/transformed/material-1.0.0/res/animator/mtrl_fab_hide_motion_spec.xml"
+    },
+    {
+        "merged": "/Users/simgroup/Flutter Code/gaweid2/build/flutter_barcode_scanner/intermediates/res/merged/release/animator/mtrl_fab_show_motion_spec.xml",
+        "source": "/Users/simgroup/.gradle/caches/transforms-3/8e67402e3cd4d2bdd584a9c93fd417ff/transformed/material-1.0.0/res/animator/mtrl_fab_show_motion_spec.xml"
+    },
+    {
+        "merged": "/Users/simgroup/Flutter Code/gaweid2/build/flutter_barcode_scanner/intermediates/res/merged/release/animator/mtrl_chip_state_list_anim.xml",
+        "source": "/Users/simgroup/.gradle/caches/transforms-3/8e67402e3cd4d2bdd584a9c93fd417ff/transformed/material-1.0.0/res/animator/mtrl_chip_state_list_anim.xml"
+    },
+    {
+        "merged": "/Users/simgroup/Flutter Code/gaweid2/build/flutter_barcode_scanner/intermediates/res/merged/release/animator/design_fab_show_motion_spec.xml",
+        "source": "/Users/simgroup/.gradle/caches/transforms-3/8e67402e3cd4d2bdd584a9c93fd417ff/transformed/material-1.0.0/res/animator/design_fab_show_motion_spec.xml"
+    },
+    {
+        "merged": "/Users/simgroup/Flutter Code/gaweid2/build/flutter_barcode_scanner/intermediates/res/merged/release/animator/design_fab_hide_motion_spec.xml",
+        "source": "/Users/simgroup/.gradle/caches/transforms-3/8e67402e3cd4d2bdd584a9c93fd417ff/transformed/material-1.0.0/res/animator/design_fab_hide_motion_spec.xml"
+    },
+    {
+        "merged": "/Users/simgroup/Flutter Code/gaweid2/build/flutter_barcode_scanner/intermediates/res/merged/release/animator/mtrl_fab_transformation_sheet_collapse_spec.xml",
+        "source": "/Users/simgroup/.gradle/caches/transforms-3/8e67402e3cd4d2bdd584a9c93fd417ff/transformed/material-1.0.0/res/animator/mtrl_fab_transformation_sheet_collapse_spec.xml"
+    },
+    {
+        "merged": "/Users/simgroup/Flutter Code/gaweid2/build/flutter_barcode_scanner/intermediates/res/merged/release/animator/mtrl_btn_state_list_anim.xml",
+        "source": "/Users/simgroup/.gradle/caches/transforms-3/8e67402e3cd4d2bdd584a9c93fd417ff/transformed/material-1.0.0/res/animator/mtrl_btn_state_list_anim.xml"
+    },
+    {
+        "merged": "/Users/simgroup/Flutter Code/gaweid2/build/flutter_barcode_scanner/intermediates/res/merged/release/animator/mtrl_btn_unelevated_state_list_anim.xml",
+        "source": "/Users/simgroup/.gradle/caches/transforms-3/8e67402e3cd4d2bdd584a9c93fd417ff/transformed/material-1.0.0/res/animator/mtrl_btn_unelevated_state_list_anim.xml"
+    }
+]

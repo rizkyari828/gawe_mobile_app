@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "943475665011",
+    "project_id": "gaweid-dd6c5",
+    "storage_bucket": "gaweid-dd6c5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:943475665011:android:3ab8241916630c0b36a206",
+        "android_client_info": {
+          "package_name": "id.gawe.gaweid2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "943475665011-9uctohctbs0vh8jloa110925nimb2pmp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC4n5rjH9fvGkD3CJEW1rBBwlVraMif6uQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "943475665011-9uctohctbs0vh8jloa110925nimb2pmp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

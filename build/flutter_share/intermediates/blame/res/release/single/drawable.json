@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/simgroup/Flutter Code/gaweid2/build/flutter_share/intermediates/res/merged/release/drawable/notification_bg_low.xml",
+        "source": "/Users/simgroup/.gradle/caches/transforms-3/ef95d7ff7da7c50d893cf7107e452ac4/transformed/core-1.3.2/res/drawable/notification_bg_low.xml"
+    },
+    {
+        "merged": "/Users/simgroup/Flutter Code/gaweid2/build/flutter_share/intermediates/res/merged/release/drawable/notification_bg.xml",
+        "source": "/Users/simgroup/.gradle/caches/transforms-3/ef95d7ff7da7c50d893cf7107e452ac4/transformed/core-1.3.2/res/drawable/notification_bg.xml"
+    },
+    {
+        "merged": "/Users/simgroup/Flutter Code/gaweid2/build/flutter_share/intermediates/res/merged/release/drawable/notification_icon_background.xml",
+        "source": "/Users/simgroup/.gradle/caches/transforms-3/ef95d7ff7da7c50d893cf7107e452ac4/transformed/core-1.3.2/res/drawable/notification_icon_background.xml"
+    },
+    {
+        "merged": "/Users/simgroup/Flutter Code/gaweid2/build/flutter_share/intermediates/res/merged/release/drawable/notification_tile_bg.xml",
+        "source": "/Users/simgroup/.gradle/caches/transforms-3/ef95d7ff7da7c50d893cf7107e452ac4/transformed/core-1.3.2/res/drawable/notification_tile_bg.xml"
+    }
+]

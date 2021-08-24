@@ -1,0 +1,4 @@
+#Tue Aug 10 20:28:50 WIB 2021
+base.0=/Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/dex/release/shrunkDex/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

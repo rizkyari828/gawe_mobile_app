@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/simgroup/Flutter Code/gaweid2/build/flutter_share/intermediates/res/merged/release/layout-v21/notification_template_icon_group.xml",
+        "source": "/Users/simgroup/.gradle/caches/transforms-3/ef95d7ff7da7c50d893cf7107e452ac4/transformed/core-1.3.2/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/simgroup/Flutter Code/gaweid2/build/flutter_share/intermediates/res/merged/release/layout-v21/notification_template_custom_big.xml",
+        "source": "/Users/simgroup/.gradle/caches/transforms-3/ef95d7ff7da7c50d893cf7107e452ac4/transformed/core-1.3.2/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/Users/simgroup/Flutter Code/gaweid2/build/flutter_share/intermediates/res/merged/release/layout-v21/notification_action_tombstone.xml",
+        "source": "/Users/simgroup/.gradle/caches/transforms-3/ef95d7ff7da7c50d893cf7107e452ac4/transformed/core-1.3.2/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/simgroup/Flutter Code/gaweid2/build/flutter_share/intermediates/res/merged/release/layout-v21/notification_action.xml",
+        "source": "/Users/simgroup/.gradle/caches/transforms-3/ef95d7ff7da7c50d893cf7107e452ac4/transformed/core-1.3.2/res/layout-v21/notification_action.xml"
+    }
+]

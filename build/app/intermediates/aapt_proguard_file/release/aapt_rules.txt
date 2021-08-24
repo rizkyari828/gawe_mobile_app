@@ -1,0 +1,286 @@
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:74
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:485
+-keep class androidx.room.MultiInstanceInvalidationService { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:384
+-keep class androidx.startup.InitializationProvider { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:415
+-keep class androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:425
+-keep class androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:445
+-keep class androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:435
+-keep class androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:465
+-keep class androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:454
+-keep class androidx.work.impl.background.systemalarm.RescheduleReceiver { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:393
+-keep class androidx.work.impl.background.systemalarm.SystemAlarmService { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:398
+-keep class androidx.work.impl.background.systemjob.SystemJobService { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:474
+-keep class androidx.work.impl.diagnostics.DiagnosticsReceiver { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:404
+-keep class androidx.work.impl.foreground.SystemForegroundService { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:410
+-keep class androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:174
+-keep class com.amolg.flutterbarcodescanner.BarcodeCaptureActivity { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:376
+-keep class com.facebook.CurrentAccessTokenExpirationBroadcastReceiver { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:313
+-keep class com.facebook.CustomTabActivity { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:312
+-keep class com.facebook.CustomTabMainActivity { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:308
+-keep class com.facebook.FacebookActivity { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:371
+-keep class com.facebook.internal.FacebookInitProvider { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:293
+-keep class com.google.android.datatransport.runtime.backends.TransportBackendDiscovery { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:495
+-keep class com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:489
+-keep class com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:338
+-keep class com.google.android.gms.common.api.GoogleApiActivity { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:353
+-keep class com.google.android.gms.measurement.AppMeasurementJobService { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:343
+-keep class com.google.android.gms.measurement.AppMeasurementReceiver { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:349
+-keep class com.google.android.gms.measurement.AppMeasurementService { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:511
+-keep class com.google.android.play.core.assetpacks.AssetPackExtractionService { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:505
+-keep class com.google.android.play.core.common.PlayCoreDialogWrapperActivity { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:498
+-keep class com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:124
+-keep class com.google.firebase.components.ComponentDiscoveryService { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:273
+-keep class com.google.firebase.iid.FirebaseInstanceIdReceiver { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:285
+-keep class com.google.firebase.messaging.FirebaseMessagingService { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:301
+-keep class com.google.firebase.provider.FirebaseInitProvider { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:256
+-keep class com.onesignal.BootUpReceiver { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:205
+-keep class com.onesignal.FCMBroadcastReceiver { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:235
+-keep class com.onesignal.FCMIntentJobService { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:234
+-keep class com.onesignal.FCMIntentService { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:241
+-keep class com.onesignal.FocusDelaySyncJobService { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:238
+-keep class com.onesignal.FocusDelaySyncService { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:217
+-keep class com.onesignal.HmsMessageServiceOneSignal { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:255
+-keep class com.onesignal.NotificationDismissReceiver { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:225
+-keep class com.onesignal.NotificationOpenedActivityHMS { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:268
+-keep class com.onesignal.NotificationOpenedReceiver { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:251
+-keep class com.onesignal.PermissionsActivity { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:247
+-keep class com.onesignal.SyncJobService { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:244
+-keep class com.onesignal.SyncService { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:262
+-keep class com.onesignal.UpgradeReceiver { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:194
+-keep class com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ActionBroadcastReceiver { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:190
+-keep class com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivity { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:186
+-keep class com.pichillilorenzo.flutter_inappwebview.in_app_browser.InAppBrowserActivity { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:526
+-keep class com.twitter.sdk.android.core.identity.OAuthActivity { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:516
+-keep class com.twitter.sdk.android.tweetcomposer.ComposerActivity { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:521
+-keep class com.twitter.sdk.android.tweetcomposer.TweetUploadService { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:331
+-keep class com.twitter.sdk.android.tweetui.GalleryActivity { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:327
+-keep class com.twitter.sdk.android.tweetui.PlayerActivity { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:86
+-keep class id.gawe.gaweid2.MainActivity { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:74
+-keep class io.flutter.app.FlutterApplication { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:164
+-keep class io.flutter.plugins.imagepicker.ImagePickerFileProvider { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:200
+-keep class io.flutter.plugins.urllauncher.WebViewActivity { <init>(); }
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/merged_manifests/release/AndroidManifest.xml:176
+-keep class zhuoyuan.li.fluttershareme.util.ShareFileProvider { <init>(); }
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/c9d5a6f2504c6039473bbbfa804406d6/transformed/appcompat-1.2.0/res/layout/abc_alert_dialog_button_bar_material.xml:43
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/c9d5a6f2504c6039473bbbfa804406d6/transformed/appcompat-1.2.0/res/layout/abc_alert_dialog_material.xml:52
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/c9d5a6f2504c6039473bbbfa804406d6/transformed/appcompat-1.2.0/res/layout/abc_alert_dialog_title_material.xml:57
+-keep class android.widget.Space { <init>(...); }
+
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/c9d5a6f2504c6039473bbbfa804406d6/transformed/appcompat-1.2.0/res/layout/abc_select_dialog_material.xml:23
+-keep class androidx.appcompat.app.AlertController$RecycleListView { <init>(...); }
+
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/c9d5a6f2504c6039473bbbfa804406d6/transformed/appcompat-1.2.0/res/layout/abc_action_menu_item_layout.xml:17
+-keep class androidx.appcompat.view.menu.ActionMenuItemView { <init>(...); }
+
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/c9d5a6f2504c6039473bbbfa804406d6/transformed/appcompat-1.2.0/res/layout/abc_expanded_menu_layout.xml:17
+-keep class androidx.appcompat.view.menu.ExpandedMenuView { <init>(...); }
+
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/c9d5a6f2504c6039473bbbfa804406d6/transformed/appcompat-1.2.0/res/layout/abc_cascading_menu_item_layout.xml:20
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/c9d5a6f2504c6039473bbbfa804406d6/transformed/appcompat-1.2.0/res/layout/abc_list_menu_item_layout.xml:17
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/c9d5a6f2504c6039473bbbfa804406d6/transformed/appcompat-1.2.0/res/layout/abc_popup_menu_item_layout.xml:17
+-keep class androidx.appcompat.view.menu.ListMenuItemView { <init>(...); }
+
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/c9d5a6f2504c6039473bbbfa804406d6/transformed/appcompat-1.2.0/res/layout/abc_screen_toolbar.xml:27
+-keep class androidx.appcompat.widget.ActionBarContainer { <init>(...); }
+
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/c9d5a6f2504c6039473bbbfa804406d6/transformed/appcompat-1.2.0/res/layout/abc_action_mode_bar.xml:19
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/c9d5a6f2504c6039473bbbfa804406d6/transformed/appcompat-1.2.0/res/layout/abc_screen_toolbar.xml:43
+-keep class androidx.appcompat.widget.ActionBarContextView { <init>(...); }
+
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/c9d5a6f2504c6039473bbbfa804406d6/transformed/appcompat-1.2.0/res/layout/abc_screen_toolbar.xml:17
+-keep class androidx.appcompat.widget.ActionBarOverlayLayout { <init>(...); }
+
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/c9d5a6f2504c6039473bbbfa804406d6/transformed/appcompat-1.2.0/res/layout/abc_action_menu_layout.xml:17
+-keep class androidx.appcompat.widget.ActionMenuView { <init>(...); }
+
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/c9d5a6f2504c6039473bbbfa804406d6/transformed/appcompat-1.2.0/res/layout/abc_activity_chooser_view.xml:19
+-keep class androidx.appcompat.widget.ActivityChooserView$InnerLayout { <init>(...); }
+
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/c9d5a6f2504c6039473bbbfa804406d6/transformed/appcompat-1.2.0/res/layout/abc_alert_dialog_material.xml:18
+-keep class androidx.appcompat.widget.AlertDialogLayout { <init>(...); }
+
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/b6977db0083b6317f12c22d1809d86b4/transformed/jetified-facebook-common-5.15.3/res/layout/com_facebook_device_auth_dialog_fragment.xml:45
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/b6977db0083b6317f12c22d1809d86b4/transformed/jetified-facebook-common-5.15.3/res/layout/com_facebook_smart_device_dialog_fragment.xml:47
+-keep class androidx.appcompat.widget.AppCompatImageView { <init>(...); }
+
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/c9d5a6f2504c6039473bbbfa804406d6/transformed/appcompat-1.2.0/res/layout/abc_alert_dialog_button_bar_material.xml:26
+-keep class androidx.appcompat.widget.ButtonBarLayout { <init>(...); }
+
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/c9d5a6f2504c6039473bbbfa804406d6/transformed/appcompat-1.2.0/res/layout/abc_screen_content_include.xml:19
+-keep class androidx.appcompat.widget.ContentFrameLayout { <init>(...); }
+
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/c9d5a6f2504c6039473bbbfa804406d6/transformed/appcompat-1.2.0/res/layout/abc_alert_dialog_title_material.xml:45
+-keep class androidx.appcompat.widget.DialogTitle { <init>(...); }
+
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/c9d5a6f2504c6039473bbbfa804406d6/transformed/appcompat-1.2.0/res/layout/abc_screen_simple_overlay_action_mode.xml:23
+-keep class androidx.appcompat.widget.FitWindowsFrameLayout { <init>(...); }
+
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/c9d5a6f2504c6039473bbbfa804406d6/transformed/appcompat-1.2.0/res/layout/abc_dialog_title_material.xml:22
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/c9d5a6f2504c6039473bbbfa804406d6/transformed/appcompat-1.2.0/res/layout/abc_screen_simple.xml:17
+-keep class androidx.appcompat.widget.FitWindowsLinearLayout { <init>(...); }
+
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/c9d5a6f2504c6039473bbbfa804406d6/transformed/appcompat-1.2.0/res/layout/abc_search_view.xml:75
+-keep class androidx.appcompat.widget.SearchView$SearchAutoComplete { <init>(...); }
+
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/c9d5a6f2504c6039473bbbfa804406d6/transformed/appcompat-1.2.0/res/layout/abc_screen_toolbar.xml:36
+-keep class androidx.appcompat.widget.Toolbar { <init>(...); }
+
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/c9d5a6f2504c6039473bbbfa804406d6/transformed/appcompat-1.2.0/res/layout/abc_screen_simple.xml:25
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/c9d5a6f2504c6039473bbbfa804406d6/transformed/appcompat-1.2.0/res/layout/abc_screen_simple_overlay_action_mode.xml:32
+-keep class androidx.appcompat.widget.ViewStubCompat { <init>(...); }
+
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/de52bef7ec621f162c3a60684597bb20/transformed/browser-1.3.0/res/layout/browser_actions_context_menu_page.xml:17
+-keep class androidx.browser.browseractions.BrowserActionsFallbackMenuView { <init>(...); }
+
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/b6977db0083b6317f12c22d1809d86b4/transformed/jetified-facebook-common-5.15.3/res/layout/com_facebook_device_auth_dialog_fragment.xml:22
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/b6977db0083b6317f12c22d1809d86b4/transformed/jetified-facebook-common-5.15.3/res/layout/com_facebook_smart_device_dialog_fragment.xml:22
+-keep class androidx.cardview.widget.CardView { <init>(...); }
+
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/8e67402e3cd4d2bdd584a9c93fd417ff/transformed/material-1.0.0/res/layout/design_bottom_sheet_dialog.xml:26
+-keep class androidx.coordinatorlayout.widget.CoordinatorLayout { <init>(...); }
+
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/c9d5a6f2504c6039473bbbfa804406d6/transformed/appcompat-1.2.0/res/layout/abc_alert_dialog_material.xml:41
+-keep class androidx.core.widget.NestedScrollView { <init>(...); }
+
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/flutter_barcode_scanner/intermediates/packaged_res/release/layout/barcode_capture.xml:10
+-keep class com.amolg.flutterbarcodescanner.camera.CameraSourcePreview { <init>(...); }
+
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/flutter_barcode_scanner/intermediates/packaged_res/release/layout/barcode_capture.xml:15
+-keep class com.amolg.flutterbarcodescanner.camera.GraphicOverlay { <init>(...); }
+
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/8e67402e3cd4d2bdd584a9c93fd417ff/transformed/material-1.0.0/res/layout/design_bottom_navigation_item.xml:27
+-keep class com.google.android.material.internal.BaselineLayout { <init>(...); }
+
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/8e67402e3cd4d2bdd584a9c93fd417ff/transformed/material-1.0.0/res/layout/design_text_input_password_icon.xml:18
+-keep class com.google.android.material.internal.CheckableImageButton { <init>(...); }
+
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/8e67402e3cd4d2bdd584a9c93fd417ff/transformed/material-1.0.0/res/layout/design_navigation_item.xml:17
+-keep class com.google.android.material.internal.NavigationMenuItemView { <init>(...); }
+
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/8e67402e3cd4d2bdd584a9c93fd417ff/transformed/material-1.0.0/res/layout/design_navigation_menu.xml:17
+-keep class com.google.android.material.internal.NavigationMenuView { <init>(...); }
+
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/8e67402e3cd4d2bdd584a9c93fd417ff/transformed/material-1.0.0/res/layout/design_layout_snackbar.xml:18
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/8e67402e3cd4d2bdd584a9c93fd417ff/transformed/material-1.0.0/res/layout/mtrl_layout_snackbar.xml:18
+-keep class com.google.android.material.snackbar.Snackbar$SnackbarLayout { <init>(...); }
+
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/8e67402e3cd4d2bdd584a9c93fd417ff/transformed/material-1.0.0/res/layout/design_layout_snackbar_include.xml:18
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/8e67402e3cd4d2bdd584a9c93fd417ff/transformed/material-1.0.0/res/layout/mtrl_layout_snackbar_include.xml:18
+-keep class com.google.android.material.snackbar.SnackbarContentLayout { <init>(...); }
+
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/flutter_inappwebview/intermediates/packaged_res/release/layout/activity_web_view.xml:17
+-keep class com.pichillilorenzo.flutter_inappwebview.in_app_webview.InAppWebView { <init>(...); }
+
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/flutter_inappwebview/intermediates/packaged_res/release/layout/activity_web_view.xml:13
+-keep class com.pichillilorenzo.flutter_inappwebview.pull_to_refresh.PullToRefreshLayout { <init>(...); }
+
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/e26a7782b067cde6c7ebff0de783a3de/transformed/jetified-tweet-composer-3.1.1/res/layout/tw__activity_composer.xml:21
+-keep class com.twitter.sdk.android.tweetcomposer.ComposerView { <init>(...); }
+
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/e26a7782b067cde6c7ebff0de783a3de/transformed/jetified-tweet-composer-3.1.1/res/layout/tw__composer_view.xml:58
+-keep class com.twitter.sdk.android.tweetcomposer.internal.util.ObservableScrollView { <init>(...); }
+
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/a166fe62a864e66e5b6030a33c19484d/transformed/jetified-tweet-ui-3.1.1/res/layout/tw__action_bar.xml:28
+-keep class com.twitter.sdk.android.tweetui.ToggleImageButton { <init>(...); }
+
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/a166fe62a864e66e5b6030a33c19484d/transformed/jetified-tweet-ui-3.1.1/res/layout/tw__action_bar.xml:18
+-keep class com.twitter.sdk.android.tweetui.TweetActionBarView { <init>(...); }
+
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/a166fe62a864e66e5b6030a33c19484d/transformed/jetified-tweet-ui-3.1.1/res/layout/tw__tweet.xml:23
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/a166fe62a864e66e5b6030a33c19484d/transformed/jetified-tweet-ui-3.1.1/res/layout/tw__tweet_compact.xml:72
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/a166fe62a864e66e5b6030a33c19484d/transformed/jetified-tweet-ui-3.1.1/res/layout/tw__tweet_quote.xml:51
+-keep class com.twitter.sdk.android.tweetui.internal.AspectRatioFrameLayout { <init>(...); }
+
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/a166fe62a864e66e5b6030a33c19484d/transformed/jetified-tweet-ui-3.1.1/res/layout/tw__tweet.xml:31
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/a166fe62a864e66e5b6030a33c19484d/transformed/jetified-tweet-ui-3.1.1/res/layout/tw__tweet_compact.xml:83
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/a166fe62a864e66e5b6030a33c19484d/transformed/jetified-tweet-ui-3.1.1/res/layout/tw__tweet_quote.xml:62
+-keep class com.twitter.sdk.android.tweetui.internal.MediaBadgeView { <init>(...); }
+
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/a166fe62a864e66e5b6030a33c19484d/transformed/jetified-tweet-ui-3.1.1/res/layout/tw__tweet.xml:27
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/a166fe62a864e66e5b6030a33c19484d/transformed/jetified-tweet-ui-3.1.1/res/layout/tw__tweet_compact.xml:79
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/a166fe62a864e66e5b6030a33c19484d/transformed/jetified-tweet-ui-3.1.1/res/layout/tw__tweet_quote.xml:58
+-keep class com.twitter.sdk.android.tweetui.internal.TweetMediaView { <init>(...); }
+
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/a166fe62a864e66e5b6030a33c19484d/transformed/jetified-tweet-ui-3.1.1/res/layout/tw__player_activity.xml:32
+-keep class com.twitter.sdk.android.tweetui.internal.VideoControlView { <init>(...); }
+
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/a166fe62a864e66e5b6030a33c19484d/transformed/jetified-tweet-ui-3.1.1/res/layout/tw__player_activity.xml:20
+-keep class com.twitter.sdk.android.tweetui.internal.VideoView { <init>(...); }
+
+# Referenced at /Users/simgroup/.gradle/caches/transforms-3/a166fe62a864e66e5b6030a33c19484d/transformed/jetified-tweet-ui-3.1.1/res/layout/tw__gallery_activity.xml:22
+-keep class com.twitter.sdk.android.tweetui.internal.ViewPagerFixed { <init>(...); }
+
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/flutter_inappwebview/intermediates/packaged_res/release/menu/menu_main.xml:36
+-keepclassmembers class * { *** closeButtonClicked(android.view.MenuItem); }
+
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/flutter_inappwebview/intermediates/packaged_res/release/menu/menu_main.xml:8
+-keepclassmembers class * { *** goBackButtonClicked(android.view.MenuItem); }
+
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/flutter_inappwebview/intermediates/packaged_res/release/menu/menu_main.xml:15
+-keepclassmembers class * { *** goForwardButtonClicked(android.view.MenuItem); }
+
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/flutter_inappwebview/intermediates/packaged_res/release/menu/menu_main.xml:29
+-keepclassmembers class * { *** reloadButtonClicked(android.view.MenuItem); }
+
+# Referenced at /Users/simgroup/Flutter Code/gaweid2/build/flutter_inappwebview/intermediates/packaged_res/release/menu/menu_main.xml:22
+-keepclassmembers class * { *** shareButtonClicked(android.view.MenuItem); }
+

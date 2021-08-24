@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "/Users/simgroup/Flutter Code/gaweid2/build/onesignal_flutter/intermediates/res/merged/release/interpolator/btn_checkbox_unchecked_mtrl_animation_interpolator_1.xml",
+        "source": "/Users/simgroup/.gradle/caches/transforms-3/18e9ac4ae8116f0f1fa79e6edfd0b22c/transformed/appcompat-1.4.0-alpha03/res/interpolator/btn_checkbox_unchecked_mtrl_animation_interpolator_1.xml"
+    },
+    {
+        "merged": "/Users/simgroup/Flutter Code/gaweid2/build/onesignal_flutter/intermediates/res/merged/release/interpolator/btn_checkbox_unchecked_mtrl_animation_interpolator_0.xml",
+        "source": "/Users/simgroup/.gradle/caches/transforms-3/18e9ac4ae8116f0f1fa79e6edfd0b22c/transformed/appcompat-1.4.0-alpha03/res/interpolator/btn_checkbox_unchecked_mtrl_animation_interpolator_0.xml"
+    },
+    {
+        "merged": "/Users/simgroup/Flutter Code/gaweid2/build/onesignal_flutter/intermediates/res/merged/release/interpolator/btn_checkbox_checked_mtrl_animation_interpolator_1.xml",
+        "source": "/Users/simgroup/.gradle/caches/transforms-3/18e9ac4ae8116f0f1fa79e6edfd0b22c/transformed/appcompat-1.4.0-alpha03/res/interpolator/btn_checkbox_checked_mtrl_animation_interpolator_1.xml"
+    },
+    {
+        "merged": "/Users/simgroup/Flutter Code/gaweid2/build/onesignal_flutter/intermediates/res/merged/release/interpolator/btn_radio_to_on_mtrl_animation_interpolator_0.xml",
+        "source": "/Users/simgroup/.gradle/caches/transforms-3/18e9ac4ae8116f0f1fa79e6edfd0b22c/transformed/appcompat-1.4.0-alpha03/res/interpolator/btn_radio_to_on_mtrl_animation_interpolator_0.xml"
+    },
+    {
+        "merged": "/Users/simgroup/Flutter Code/gaweid2/build/onesignal_flutter/intermediates/res/merged/release/interpolator/fast_out_slow_in.xml",
+        "source": "/Users/simgroup/.gradle/caches/transforms-3/18e9ac4ae8116f0f1fa79e6edfd0b22c/transformed/appcompat-1.4.0-alpha03/res/interpolator/fast_out_slow_in.xml"
+    },
+    {
+        "merged": "/Users/simgroup/Flutter Code/gaweid2/build/onesignal_flutter/intermediates/res/merged/release/interpolator/btn_checkbox_checked_mtrl_animation_interpolator_0.xml",
+        "source": "/Users/simgroup/.gradle/caches/transforms-3/18e9ac4ae8116f0f1fa79e6edfd0b22c/transformed/appcompat-1.4.0-alpha03/res/interpolator/btn_checkbox_checked_mtrl_animation_interpolator_0.xml"
+    },
+    {
+        "merged": "/Users/simgroup/Flutter Code/gaweid2/build/onesignal_flutter/intermediates/res/merged/release/interpolator/btn_radio_to_off_mtrl_animation_interpolator_0.xml",
+        "source": "/Users/simgroup/.gradle/caches/transforms-3/18e9ac4ae8116f0f1fa79e6edfd0b22c/transformed/appcompat-1.4.0-alpha03/res/interpolator/btn_radio_to_off_mtrl_animation_interpolator_0.xml"
+    }
+]

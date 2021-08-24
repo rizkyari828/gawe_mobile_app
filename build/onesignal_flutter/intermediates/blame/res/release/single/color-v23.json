@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "/Users/simgroup/Flutter Code/gaweid2/build/onesignal_flutter/intermediates/res/merged/release/color-v23/abc_color_highlight_material.xml",
+        "source": "/Users/simgroup/.gradle/caches/transforms-3/18e9ac4ae8116f0f1fa79e6edfd0b22c/transformed/appcompat-1.4.0-alpha03/res/color-v23/abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "/Users/simgroup/Flutter Code/gaweid2/build/onesignal_flutter/intermediates/res/merged/release/color-v23/abc_tint_edittext.xml",
+        "source": "/Users/simgroup/.gradle/caches/transforms-3/18e9ac4ae8116f0f1fa79e6edfd0b22c/transformed/appcompat-1.4.0-alpha03/res/color-v23/abc_tint_edittext.xml"
+    },
+    {
+        "merged": "/Users/simgroup/Flutter Code/gaweid2/build/onesignal_flutter/intermediates/res/merged/release/color-v23/abc_tint_btn_checkable.xml",
+        "source": "/Users/simgroup/.gradle/caches/transforms-3/18e9ac4ae8116f0f1fa79e6edfd0b22c/transformed/appcompat-1.4.0-alpha03/res/color-v23/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/Users/simgroup/Flutter Code/gaweid2/build/onesignal_flutter/intermediates/res/merged/release/color-v23/abc_tint_default.xml",
+        "source": "/Users/simgroup/.gradle/caches/transforms-3/18e9ac4ae8116f0f1fa79e6edfd0b22c/transformed/appcompat-1.4.0-alpha03/res/color-v23/abc_tint_default.xml"
+    },
+    {
+        "merged": "/Users/simgroup/Flutter Code/gaweid2/build/onesignal_flutter/intermediates/res/merged/release/color-v23/abc_btn_colored_text_material.xml",
+        "source": "/Users/simgroup/.gradle/caches/transforms-3/18e9ac4ae8116f0f1fa79e6edfd0b22c/transformed/appcompat-1.4.0-alpha03/res/color-v23/abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "/Users/simgroup/Flutter Code/gaweid2/build/onesignal_flutter/intermediates/res/merged/release/color-v23/abc_tint_spinner.xml",
+        "source": "/Users/simgroup/.gradle/caches/transforms-3/18e9ac4ae8116f0f1fa79e6edfd0b22c/transformed/appcompat-1.4.0-alpha03/res/color-v23/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/Users/simgroup/Flutter Code/gaweid2/build/onesignal_flutter/intermediates/res/merged/release/color-v23/abc_tint_switch_track.xml",
+        "source": "/Users/simgroup/.gradle/caches/transforms-3/18e9ac4ae8116f0f1fa79e6edfd0b22c/transformed/appcompat-1.4.0-alpha03/res/color-v23/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "/Users/simgroup/Flutter Code/gaweid2/build/onesignal_flutter/intermediates/res/merged/release/color-v23/abc_tint_seek_thumb.xml",
+        "source": "/Users/simgroup/.gradle/caches/transforms-3/18e9ac4ae8116f0f1fa79e6edfd0b22c/transformed/appcompat-1.4.0-alpha03/res/color-v23/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/Users/simgroup/Flutter Code/gaweid2/build/onesignal_flutter/intermediates/res/merged/release/color-v23/abc_btn_colored_borderless_text_material.xml",
+        "source": "/Users/simgroup/.gradle/caches/transforms-3/18e9ac4ae8116f0f1fa79e6edfd0b22c/transformed/appcompat-1.4.0-alpha03/res/color-v23/abc_btn_colored_borderless_text_material.xml"
+    }
+]

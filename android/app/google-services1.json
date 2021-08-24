@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "41427954757",
+    "firebase_url": "https://gaweid.firebaseio.com",
+    "project_id": "gaweid",
+    "storage_bucket": "gaweid.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:41427954757:android:8e907ce6a0a9018b1fc72c",
+        "android_client_info": {
+          "package_name": "id.gawe.gaweid2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "41427954757-n7omg95vkji5svsugqsbh092dth110fi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.gawe.gaweid2",
+            "certificate_hash": "8571c49d7a5fa9103abfb94df1e0d7ba28d1b020"
+          }
+        },
+        {
+          "client_id": "41427954757-o123pml4ltbel76ouk0h59qa7gq3ua58.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCgUEVB7rXpVRdEMMYRHbaQF5AH7dQ90WY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "41427954757-o123pml4ltbel76ouk0h59qa7gq3ua58.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
