@@ -24,20 +24,20 @@ io/flutter/plugins/googlemaps/GoogleMapController.java
  io.flutter.plugins.googlemaps.GoogleMapListener
 io/flutter/plugins/googlemaps/MarkerOptionsSink.java
  io.flutter.plugins.googlemaps.MarkerOptionsSink
-io/flutter/plugins/googlemaps/Convert.java
- io.flutter.plugins.googlemaps.Convert
-io/flutter/plugins/googlemaps/MarkerController.java
- io.flutter.plugins.googlemaps.MarkerController
 io/flutter/plugins/googlemaps/PolygonController.java
  io.flutter.plugins.googlemaps.PolygonController
+io/flutter/plugins/googlemaps/MarkerController.java
+ io.flutter.plugins.googlemaps.MarkerController
+io/flutter/plugins/googlemaps/Convert.java
+ io.flutter.plugins.googlemaps.Convert
 io/flutter/plugins/googlemaps/MarkersController.java
  io.flutter.plugins.googlemaps.MarkersController
 io/flutter/plugins/googlemaps/GoogleMapFactory.java
  io.flutter.plugins.googlemaps.GoogleMapFactory
-io/flutter/plugins/googlemaps/CircleOptionsSink.java
- io.flutter.plugins.googlemaps.CircleOptionsSink
 io/flutter/plugins/googlemaps/CirclesController.java
  io.flutter.plugins.googlemaps.CirclesController
+io/flutter/plugins/googlemaps/CircleOptionsSink.java
+ io.flutter.plugins.googlemaps.CircleOptionsSink
 io/flutter/plugins/googlemaps/BuildConfig.java
  io.flutter.plugins.googlemaps.BuildConfig
 io/flutter/plugins/googlemaps/PolylineController.java

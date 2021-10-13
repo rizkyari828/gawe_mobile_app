@@ -79,15 +79,15 @@ class _TipsPageState extends State<TipsPage> {
                 padding: const EdgeInsets.all(8.0),
                 child: InkWell(
                   onTap: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => NewsDetail(
-                                  title:
-                                      tipsx.title == null ? "" : tipsx.title,
-                                  foto: tipsx.foto == null ? "" : tipsx.foto,
-                                  desc: tipsx.desc == null ? "" : tipsx.desc,
-                                )));
+                    // Navigator.push(
+                    //     context,
+                    //     MaterialPageRoute(
+                    //         builder: (context) => NewsDetail(
+                    //               title:
+                    //                   tipsx.title == null ? "" : tipsx.title,
+                    //               foto: tipsx.foto == null ? "" : tipsx.foto,
+                    //               desc: tipsx.desc == null ? "" : tipsx.desc,
+                    //             )));
                   },
                   child: Column(
                     children: <Widget>[

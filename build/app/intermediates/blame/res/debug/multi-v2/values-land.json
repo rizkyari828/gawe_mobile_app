@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/simgroup/Flutter Code/gaweid2/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
+            "outputFile": "/home/tama/Developer/Flutter Project/gaweid2/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-land/values-land.xml",
             "map": [
                 {
-                    "source": "/Users/simgroup/.gradle/caches/transforms-3/8e67402e3cd4d2bdd584a9c93fd417ff/transformed/material-1.0.0/res/values-land/values-land.xml",
+                    "source": "/home/tama/.gradle/caches/transforms-3/8e67402e3cd4d2bdd584a9c93fd417ff/transformed/material-1.0.0/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Users/simgroup/.gradle/caches/transforms-3/c9d5a6f2504c6039473bbbfa804406d6/transformed/appcompat-1.2.0/res/values-land/values-land.xml",
+                    "source": "/home/tama/.gradle/caches/transforms-3/c9d5a6f2504c6039473bbbfa804406d6/transformed/appcompat-1.2.0/res/values-land/values-land.xml",
                     "from": {
                         "startLines": "2,3,4",
                         "startColumns": "4,4,4",

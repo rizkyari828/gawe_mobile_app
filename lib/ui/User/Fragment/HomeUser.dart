@@ -14,24 +14,27 @@ import 'package:gaweid2/model/user/ModelLowongan2.dart';
 import 'package:gaweid2/modules/lowongan/view/home.dart';
 import 'package:gaweid2/network/NetworkProvider.dart';
 import 'package:gaweid2/modules/lowongan/Component/itemLowongan.dart';
+import 'package:gaweid2/routes/routes_pages.dart';
 import 'package:gaweid2/ui/User/Fragment/AkunUser.dart';
 import 'package:gaweid2/modules/lowongan/view/detail_lowongan.dart';
 import 'package:gaweid2/modules/media/view/media.dart';
 import 'package:gaweid2/modules/media/view/news_detail.dart';
 import 'package:gaweid2/modules/learning/views/menuLearning.dart';
 import 'package:gaweid2/utils/SessionManager.dart';
+import 'package:gaweid2/utils/controllers/utilsController.dart';
 import 'package:gaweid2/utils/theme.dart';
+import 'package:gaweid2/utils/views/checkVersion.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:http/http.dart' as http;
 import 'package:intl/intl.dart';
 import 'package:toast/toast.dart';
 // import 'package:geolocator/geolocator.dart';
-import 'package:in_app_update/in_app_update.dart';
 import 'package:onesignal_flutter/onesignal_flutter.dart';
 import 'package:gaweid2/modules/media/models/ModelNews.dart';
 import 'package:uni_links/uni_links.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:flutter/services.dart';
+import 'package:get/get.dart';
 
 class HomeUser extends StatefulWidget {
   @override
@@ -40,9 +43,9 @@ class HomeUser extends StatefulWidget {
 
 class _HomeUserState extends State<HomeUser> {
   BaseEndPoint network = NetworkProvider();
+  final utilsC = Get.put(UtilsController());
   String link = "";
   String position;
-  //List<Wisata> potsList = [];
   double nLat = 0;
   double nLong = 0;
 
@@ -63,17 +66,11 @@ class _HomeUserState extends State<HomeUser> {
         nLat = currentLocation.latitude;
         nLong = currentLocation.longitude;
         // myPostion = LatLng(nLat, nLong);
-        if(mystatus == true){
-          if(userLat == 0.1 && userLong == 0.1){
+        if (mystatus == true) {
+          if (userLat == 0.1 && userLong == 0.1) {
             submit(nLat, nLong);
-          }else {
-
-          }
+          } else {}
         }
-
-        ///
-        // Next Function add to marker
-        // mapsCamera();
       });
     } on Exception {
       print("Null");
@@ -82,15 +79,12 @@ class _HomeUserState extends State<HomeUser> {
 
   void submit(lat, long) async {
     ModelRegister data = await network.saveLocation(
-        globalEmail.toString(),
-        lat.toString(),
-        long.toString());
+        globalEmail.toString(), lat.toString(), long.toString());
   }
 
   void submitPlayerId(playerId) async {
-    ModelRegister data = await network.savePlayerId(
-        globalEmail.toString(),
-        playerId.toString());
+    ModelRegister data =
+        await network.savePlayerId(globalEmail.toString(), playerId.toString());
   }
   //
   // // Set Camera
@@ -131,108 +125,8 @@ class _HomeUserState extends State<HomeUser> {
   //   });
   // }
 
-  AppUpdateInfo _updateInfo;
-
-  GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey();
-
-  bool _flexibleUpdateAvailable = false;
-
-  // Platform messages are asynchronous, so we initialize in an async method.
-  Future<void> checkForUpdate() async {
-    InAppUpdate.checkForUpdate().then((info) {
-      setState(() {
-        _updateInfo = info;
-      });
-    }).catchError((e) {
-      showSnack(e.toString());
-    });
-  }
-
-  void showSnack(String text) {
-    if (_scaffoldKey.currentContext != null) {
-      ScaffoldMessenger.of(_scaffoldKey.currentContext)
-          .showSnackBar(SnackBar(content: Text(text)));
-    }
-  }
-
   void main() async {
-//    var status = await OneSignal.shared.getPermissionSubscriptionState();
-//
-//    var tokenplayerId = status.subscriptionStatus.userId;
-//    setState(() {
-//      tokenplayerId2 = tokenplayerId;
-//
-//    });
-//
-////    await OneSignal.shared.postNotification(OSCreateNotification(
-////        playerIds: [tokenplayerId],
-////        content: "this is a test from OneSignal's Flutter SDK",
-////        heading: "Test Notification",
-////        buttons: [
-////          OSActionButton(text: "test1", id: "id1"),
-////          OSActionButton(text: "test2", id: "id2")
-////        ]
-////    ));
-//    print("tokenplayerid${tokenplayerId}");
-
     WidgetsFlutterBinding.ensureInitialized();
-
-    // OneSignal.shared.init(
-    //   "c243b1b4-497a-45cb-8895-21ba35e2b8c5",
-    //   iOSSettings: null,
-    // );
-    // OneSignal.shared
-    //     .setInFocusDisplayType(OSNotificationDisplayType.notification);
-  }
-
-  // AppUpdateInfo _updateInfo;
-  // GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey();
-  //
-  // bool _flexibleUpdateAvailable = false;
-  //
-  // // Platform messages are asynchronous, so we initialize in an async method.
-  // Future<void> checkForUpdate() async {
-  //   InAppUpdate.checkForUpdate().then((info) {
-  //     setState(() {
-  //       _updateInfo = info;
-  //     });
-  //   }).catchError((e) => _showError(e));
-  // }
-  //
-  // void _showError(dynamic exception) {
-  //   _scaffoldKey.currentState
-  //       .showSnackBar(SnackBar(content: Text(exception.toString())));
-  // }
-
-  void updateversion() {
-    _updateInfo?.updateAvailability == UpdateAvailability.updateAvailable
-        ? () {
-            InAppUpdate.performImmediateUpdate()
-                .catchError((e) => showSnack(e.toString()));
-          }
-        : null;
-
-    _updateInfo?.updateAvailability == UpdateAvailability.updateAvailable
-        ? () {
-            InAppUpdate.startFlexibleUpdate().then((_) {
-              setState(() {
-                _flexibleUpdateAvailable = true;
-              });
-            }).catchError((e) {
-              showSnack(e.toString());
-            });
-          }
-        : null;
-
-    !_flexibleUpdateAvailable
-        ? null
-        : () {
-            InAppUpdate.completeFlexibleUpdate().then((_) {
-              showSnack("Success!");
-            }).catchError((e) {
-              showSnack(e.toString());
-            });
-          };
   }
 
   TextEditingController etSearch = new TextEditingController();
@@ -253,8 +147,6 @@ class _HomeUserState extends State<HomeUser> {
         });
       }
     });
-
-    print("keyword${keyword}");
   }
 
   List<ModelLowongan> _search = [];
@@ -265,13 +157,14 @@ class _HomeUserState extends State<HomeUser> {
 
   Future<List> getLowongan() async {
     setState(() {
-      if(globalid_employee == null){
+      if (globalid_employee == null) {
         idEmp = "0";
-      }else{
+      } else {
         idEmp = globalid_employee;
       }
     });
-    final response = await http.get(NetworkConfig().baseUrl + "apps/toplist?id=" + idEmp);
+    final response =
+        await http.get(NetworkConfig().baseUrl + "apps/toplist?id=" + idEmp);
     ModelLowongan2 listdata = modelLowongan2FromJson(response.body);
 
     return listdata.lowongan;
@@ -289,14 +182,12 @@ class _HomeUserState extends State<HomeUser> {
     } else {
       //print("Get Data Failed");
     }
-
     return listdata.lowongan;
   }
 
   void status_update_otomatis() async {
     final response = await http.get(
         NetworkConfig().baseUrl + "apps/update_status_not_active_otomatis");
-
     ModelRegister listData = modelRegisterFromJson(response.body);
 
     if (listData.status == 200) {
@@ -367,25 +258,26 @@ class _HomeUserState extends State<HomeUser> {
   }
 
   String logo,
-  provinsi,
-  posisi,
-  id_lowongan,
-  perusahaan,
-  gajimin,
-  gajimax,
-  jenjang_career_id,
-  pendidikan,
-  city_id,
-  pengalaman,
-  rincian,
-  kuota,
-  kualifikasi,
-  alamat,
-  deskripsi,
-  jenispekerjaan,
-  datePostEnd,
-  id_perusahaan,
-  directLink, id_employee;
+      provinsi,
+      posisi,
+      id_lowongan,
+      perusahaan,
+      gajimin,
+      gajimax,
+      jenjang_career_id,
+      pendidikan,
+      city_id,
+      pengalaman,
+      rincian,
+      kuota,
+      kualifikasi,
+      alamat,
+      deskripsi,
+      jenispekerjaan,
+      datePostEnd,
+      id_perusahaan,
+      directLink,
+      id_employee;
 
   @override
   void initState() {
@@ -395,161 +287,111 @@ class _HomeUserState extends State<HomeUser> {
     getPreferences();
     getNews();
     status_update_otomatis();
-    checkForUpdate();
-    updateversion();
     initUniLinks().then((value) => this.setState(() {
-      var url = value;
-      String suffix = url.split('/').last;
-      print(" llll ${suffix}");
-      String decode = utf8.decode(base64.decode(suffix));
-      link = value;
-      if(decode != null){
-        setState(() {
-          Navigator.push(
-              context,
-              MaterialPageRoute(
-                  builder: (context) => (singleDetailLowongan(idEmployee: globalid_employee, idLowongan: decode))));
-        });
-      }
-
-
-      // print(" llllo ${decode}");
-
-
-      // List<String> split(String path) => context.split(path);
-    }));
-    OneSignal.shared.setNotificationOpenedHandler((OSNotificationOpenedResult result) {
+          var url = value;
+          String suffix = url.split('/').last;
+          String decode = utf8.decode(base64.decode(suffix));
+          link = value;
+          if (decode != null) {
+            setState(() {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => (singleDetailLowongan(
+                          idEmployee: globalid_employee, idLowongan: decode))));
+            });
+          }
+          // List<String> split(String path) => context.split(path);
+        }));
+    OneSignal.shared
+        .setNotificationOpenedHandler((OSNotificationOpenedResult result) {
       // Will be called whenever a notification is opened/button pressed.
     });
-
-    // OneSignal.shared.setEmail(email: "pandutes@gmail.com", emailAuthHashToken: tokenFromServer).then((result) {
-    //request succeeded
-
-    // OneSignal.shared
-    //     .setNotificationReceivedHandler((OSNotification notification) {
-    //   // will be called whenever a notification is received
-    //   title = notification.payload.title;
-    //   content = notification.payload.body;
-    // });
 
     OneSignal.shared
         .setNotificationOpenedHandler((OSNotificationOpenedResult result) {
       // print("Opened notification: \n${result.notification.jsonRepresentation().replaceAll("\\n", "\n")}");
-      print("Opened notification: \n${result.notification.additionalData["id_lowongan"]}");
+      print(
+          "Opened notification: \n${result.notification.additionalData["id_lowongan"]}");
       print("Opened notification: \n${result.notification.additionalData}");
       var data = result.notification;
       // this.setState(() {!
-        Navigator.push(
-            context,
-            MaterialPageRoute(
-                builder: (context) => Detail_lowongan(
-                  logo: data.additionalData["logo"] == null
-                      ? ""
-                      : data.additionalData["logo"],
-                  provinsi: data.additionalData["province_id"] == null
-                      ? ""
-                      : data.additionalData["province_id"],
-                  posisi: data.additionalData["posisi"] == null
-                      ? ""
-                      : data.additionalData["posisi"],
-                  id: data.additionalData["id_lowongan"] == null
-                      ? ""
-                      : data.additionalData["id_lowongan"],
-                  perusahaan: data.additionalData["nama_perusahaan"] == null
-                      ? ""
-                      : data.additionalData["nama_perusahaan"],
-                  gajimin: data.additionalData["gaji_min"] == null
-                      ? ""
-                      : data.additionalData["gaji_min"],
-                  gajimax: data.additionalData["gaji_max"] == null
-                      ? ""
-                      : data.additionalData["gaji_max"],
-                  jenjang_career_id: data.additionalData["jenjang_career_id"]
-                      .toString() ==
-                      null
-                      ? ""
-                      : data.additionalData["jenjang_career_id"].toString(),
-                  pendidikan:
-                  data.additionalData["pendidikan"].toString() == null
-                      ? ""
-                      : data.additionalData["pendidikan"].toString(),
-                  city_id: data.additionalData["city_id"].toString() == ""
-                      ? ""
-                      : data.additionalData["city_id"].toString(),
-                  pengalaman:
-                  data.additionalData["pengalaman_id"].toString() == null
-                      ? ""
-                      : data.additionalData["pengalaman_id"].toString(),
-                  rincian: data.additionalData["rincian"].toString() == null
-                      ? ""
-                      : data.additionalData["rincian"].toString(),
-                  kualifikasi:
-                  data.additionalData["kualifikasi"].toString() == null
-                      ? ""
-                      : data.additionalData["kualifikasi"].toString(),
-                  kuota: data.additionalData["kuota"].toString() == null
-                      ? ""
-                      : data.additionalData["kuota"].toString(),
-                  alamat: data.additionalData["alamat"].toString() == null
-                      ? ""
-                      : data.additionalData["alamat"].toString(),
-                  deskripsi:
-                  data.additionalData["deskripsi"].toString() == null
-                      ? ""
-                      : data.additionalData["deskripsi"].toString(),
-                  jenispekerjaan:
-                  data.additionalData["jenis_pekerjaan"].toString() ==
-                      null
-                      ? ""
-                      : data.additionalData["jenis_pekerjaan"].toString(),
-                  datePostEnd:
-                  data.additionalData["date_post_end"].toString() ==
-                      null
-                      ? ""
-                      : data.additionalData["date_post_end"].toString(),
-                  directLink: data.additionalData["direct_link"].toString() == null ? "" : data.additionalData["direct_link"].toString(),
-                  id_employee: globalid_employee == null ? "" : globalid_employee,
-                )));
-        // id_lowongan =
-        // _debugLabelString =
-        // "Opened notification: \n${result.notification.jsonRepresentation().replaceAll("\\n", "\n")}";
-      // });
+      Navigator.push(
+          context,
+          MaterialPageRoute(
+              builder: (context) => Detail_lowongan(
+                    logo: data.additionalData["logo"] == null
+                        ? ""
+                        : data.additionalData["logo"],
+                    provinsi: data.additionalData["province_id"] == null
+                        ? ""
+                        : data.additionalData["province_id"],
+                    posisi: data.additionalData["posisi"] == null
+                        ? ""
+                        : data.additionalData["posisi"],
+                    id: data.additionalData["id_lowongan"] == null
+                        ? ""
+                        : data.additionalData["id_lowongan"],
+                    perusahaan: data.additionalData["nama_perusahaan"] == null
+                        ? ""
+                        : data.additionalData["nama_perusahaan"],
+                    gajimin: data.additionalData["gaji_min"] == null
+                        ? ""
+                        : data.additionalData["gaji_min"],
+                    gajimax: data.additionalData["gaji_max"] == null
+                        ? ""
+                        : data.additionalData["gaji_max"],
+                    jenjang_career_id: data.additionalData["jenjang_career_id"]
+                                .toString() ==
+                            null
+                        ? ""
+                        : data.additionalData["jenjang_career_id"].toString(),
+                    pendidikan:
+                        data.additionalData["pendidikan"].toString() == null
+                            ? ""
+                            : data.additionalData["pendidikan"].toString(),
+                    city_id: data.additionalData["city_id"].toString() == ""
+                        ? ""
+                        : data.additionalData["city_id"].toString(),
+                    pengalaman:
+                        data.additionalData["pengalaman_id"].toString() == null
+                            ? ""
+                            : data.additionalData["pengalaman_id"].toString(),
+                    rincian: data.additionalData["rincian"].toString() == null
+                        ? ""
+                        : data.additionalData["rincian"].toString(),
+                    kualifikasi:
+                        data.additionalData["kualifikasi"].toString() == null
+                            ? ""
+                            : data.additionalData["kualifikasi"].toString(),
+                    kuota: data.additionalData["kuota"].toString() == null
+                        ? ""
+                        : data.additionalData["kuota"].toString(),
+                    alamat: data.additionalData["alamat"].toString() == null
+                        ? ""
+                        : data.additionalData["alamat"].toString(),
+                    deskripsi:
+                        data.additionalData["deskripsi"].toString() == null
+                            ? ""
+                            : data.additionalData["deskripsi"].toString(),
+                    jenispekerjaan:
+                        data.additionalData["jenis_pekerjaan"].toString() ==
+                                null
+                            ? ""
+                            : data.additionalData["jenis_pekerjaan"].toString(),
+                    datePostEnd:
+                        data.additionalData["date_post_end"].toString() == null
+                            ? ""
+                            : data.additionalData["date_post_end"].toString(),
+                    directLink:
+                        data.additionalData["direct_link"].toString() == null
+                            ? ""
+                            : data.additionalData["direct_link"].toString(),
+                    id_employee:
+                        globalid_employee == null ? "" : globalid_employee,
+                  )));
     });
-
-
-    // OneSignal.shared.setPermissionObserver((OSPermissionStateChanges linchanges) {
-    //   // will be called whenever the permission changes
-    //   // (ie. user taps Allow on the permission prompt in iOS)
-    // });
-
-    // OneSignal.shared
-    //     .setSubscriptionObserver((OSSubscriptionStateChanges changes) {
-    //   // will be called whenever the subscription changes
-    //   //(ie. user gets registered with OneSignal and gets a user ID)
-    // });
-
-    // OneSignal.shared.setEmailSubscriptionObserver(
-    //     (OSEmailSubscriptionStateChanges emailChanges) {
-    //   // will be called whenever then user's email subscription changes
-    //   // (ie. OneSignal.setEmail(email) is called and the user gets registered
-    // });
-
-    // void _handleNotificationReceived(OSNotification notification) {}
-
-    // OneSignal.shared
-    //     .setNotificationReceivedHandler(_handleNotificationReceived);
-    // fetchData();
-
-//    }).catchError((error) {
-//      //encountered an error
-//    });
-
-// For each of the above functions, you can also pass in a
-// reference to a function as well:
-
-    // _kGooglePlex = CameraPosition(target: LatLng(nLat, nLong), zoom: 14.4746);
     getCurrentLocation();
-
   }
 
   Future<String> initUniLinks() async {
@@ -580,36 +422,39 @@ class _HomeUserState extends State<HomeUser> {
         color: backgroundColor,
         child: _isSearch
             ? SingleChildScrollView(
-              child: Stack(
+                child: Stack(
                   children: <Widget>[
                     Container(
                       width: MediaQuery.of(context).size.width,
                       height: MediaQuery.of(context).size.height / 2.2,
-                      decoration: new BoxDecoration(
-                          color: mainColor
-                      ),
+                      decoration: new BoxDecoration(color: mainColor),
                     ),
                     Column(
                       children: [
                         Padding(
-                          padding: const EdgeInsets.only(right:10, top: 10),
+                          padding: const EdgeInsets.only(right: 10, top: 10),
                           child: Row(
                             children: [
                               MaterialButton(
                                 onPressed: () {
-                                  Navigator.of(context).push(new MaterialPageRoute(
-                                      builder: (BuildContext context) => Filter()));
+                                  Navigator.of(context).push(
+                                      new MaterialPageRoute(
+                                          builder: (BuildContext context) =>
+                                              Filter()));
                                 },
                                 child: Container(
                                   constraints: BoxConstraints(maxHeight: 60),
-                                  width: MediaQuery.of(context).size.width - 100,
-                                  height: MediaQuery.of(context).size.height / 13,
+                                  width:
+                                      MediaQuery.of(context).size.width - 100,
+                                  height:
+                                      MediaQuery.of(context).size.height / 13,
                                   child: Card(
                                     elevation: 1,
                                     margin: new EdgeInsets.only(
                                         top: 5.0, bottom: 5.0),
                                     shape: RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.circular(10.0)),
+                                        borderRadius:
+                                            BorderRadius.circular(10.0)),
                                     child: Padding(
                                       padding: const EdgeInsets.only(left: 8.0),
                                       child: Row(
@@ -619,36 +464,17 @@ class _HomeUserState extends State<HomeUser> {
                                             color: Colors.grey,
                                           ),
                                           Padding(
-                                            padding: const EdgeInsets.only(top:3, left: 8.0),
-                                            child: Text("Cari lowongan", style: TextStyle(
-                                              fontSize: 16, color: Colors.grey,
-                                              fontWeight: FontWeight.w300,
-                                            ),),
+                                            padding: const EdgeInsets.only(
+                                                top: 3, left: 8.0),
+                                            child: Text(
+                                              "Cari lowongan",
+                                              style: TextStyle(
+                                                fontSize: 16,
+                                                color: Colors.grey,
+                                                fontWeight: FontWeight.w300,
+                                              ),
+                                            ),
                                           ),
-                                          // new Flexible(
-                                          //   child: Padding(
-                                          //     padding: const EdgeInsets.only(
-                                          //         left: 10.0, bottom: 3.0),
-                                          //     child:
-                                          //     new TextField(
-                                          //       controller: etSearch,
-                                          //       onChanged: onSearch,
-                                          //       decoration: const InputDecoration(
-                                          //           hintText: "Cari Lowongan",
-                                          //           border: InputBorder.none),
-                                          //     ),
-                                          //   ),
-                                          // ),
-                                          // IconButton(
-                                          //   onPressed: () {
-                                          //     etSearch.clear();
-                                          //     onSearch('');
-                                          //   },
-                                          //   icon: Icon(
-                                          //     Icons.cancel,
-                                          //     color: Colors.grey,
-                                          //   ),
-                                          // )
                                         ],
                                       ),
                                     ),
@@ -666,7 +492,10 @@ class _HomeUserState extends State<HomeUser> {
                                     Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                            builder: (context) => (AkunUser(id_employee: globalid_employee,))));
+                                            builder: (context) => (AkunUser(
+                                                  id_employee:
+                                                      globalid_employee,
+                                                ))));
                                   },
                                 ),
                               )
@@ -674,12 +503,13 @@ class _HomeUserState extends State<HomeUser> {
                           ),
                         ),
                         Padding(
-                          padding: const EdgeInsets.only(top:20),
+                          padding: const EdgeInsets.only(top: 20),
                           child: Container(
                             child: FutureBuilder(
                                 future: getBanner(),
                                 builder: (context, snapshot) {
-                                  if (snapshot.hasError) print(snapshot.hasError);
+                                  if (snapshot.hasError)
+                                    print(snapshot.hasError);
                                   List<ModelBanner> dataSlider = snapshot.data;
                                   return Column(
                                     children: <Widget>[
@@ -690,46 +520,59 @@ class _HomeUserState extends State<HomeUser> {
                                           itemBuilder: (context, index) {
                                             return snapshot.hasData
                                                 ? MaterialButton(
-                                                  child: Column(
-                                                    children: [
-                                                      Container(
-                                                        width: MediaQuery.of(context)
-                                                      .size.width,
-                                                        height: MediaQuery.of(context)
-                                                            .size
-                                                            .height /
-                                                            4,
-                                                        child: ClipRRect(
-                                                          borderRadius:
-                                                          BorderRadius.circular(
-                                                              10),
-                                                          child: Image.network(
-                                                            dataSlider[index].file,
-                                                            fit: BoxFit.fill,
-                                                            width: double.infinity,
+                                                    child: Column(
+                                                      children: [
+                                                        Container(
+                                                          width: MediaQuery.of(
+                                                                  context)
+                                                              .size
+                                                              .width,
+                                                          height: MediaQuery.of(
+                                                                      context)
+                                                                  .size
+                                                                  .height /
+                                                              4,
+                                                          child: ClipRRect(
+                                                            borderRadius:
+                                                                BorderRadius
+                                                                    .circular(
+                                                                        10),
+                                                            child:
+                                                                Image.network(
+                                                              dataSlider[index]
+                                                                  .file,
+                                                              fit: BoxFit.fill,
+                                                              width: double
+                                                                  .infinity,
+                                                            ),
                                                           ),
                                                         ),
-                                                      ),
-                                                    ],
-                                                  ),
-                                                  onPressed: () {
-                                                    print(dataSlider[index].status);
-                                                    if(dataSlider[index].status == '2'){
-
-                                                      Navigator.of(context)
-                                                          .push(new MaterialPageRoute(
-                                                          builder: (BuildContext context) =>
-                                                      UI_Modul(
-                                                        kodelearning: "854414",
-                                                        kodeReferral: "GAWE-001",
-                                                        namaLearning: "QUIZ GAWE.ID",
-                                                      )));
-                                                    }else{
-                                                      launch(dataSlider[index].link);
-                                                    }
-
-                                                  },
-                                                )
+                                                      ],
+                                                    ),
+                                                    onPressed: () {
+                                                      print(dataSlider[index]
+                                                          .status);
+                                                      if (dataSlider[index]
+                                                              .status ==
+                                                          '2') {
+                                                        Navigator.of(context).push(
+                                                            new MaterialPageRoute(
+                                                                builder: (BuildContext
+                                                                        context) =>
+                                                                    UI_Modul(
+                                                                      kodelearning:
+                                                                          "854414",
+                                                                      kodeReferral:
+                                                                          "GAWE-001",
+                                                                      namaLearning:
+                                                                          "QUIZ GAWE.ID",
+                                                                    )));
+                                                      } else {
+                                                        launch(dataSlider[index]
+                                                            .link);
+                                                      }
+                                                    },
+                                                  )
                                                 : Container(
                                                     child: Center(
                                                         child:
@@ -749,22 +592,23 @@ class _HomeUserState extends State<HomeUser> {
                                 }),
                           ),
                         ),
-                        SizedBox(height: 20,),
+                        SizedBox(
+                          height: 20,
+                        ),
                         Column(
                           children: [
                             Padding(
-                              padding: const EdgeInsets.only(right: 10, left:10.0),
+                              padding:
+                                  const EdgeInsets.only(right: 10, left: 10.0),
                               child: Container(
                                 decoration: BoxDecoration(
                                     color: Colors.white,
                                     borderRadius: BorderRadius.circular(10),
-                                    boxShadow: [
-                                      BoxShadow(color: mainColor)
-                                    ]
-                                ),
+                                    boxShadow: [BoxShadow(color: mainColor)]),
                                 constraints: BoxConstraints(maxHeight: 100),
                                 child: Padding(
-                                  padding: const EdgeInsets.only(top: 5, bottom:5.0, left:5, right: 5),
+                                  padding: const EdgeInsets.only(
+                                      top: 5, bottom: 5.0, left: 5, right: 5),
                                   child: ListView(
                                     physics: ClampingScrollPhysics(),
                                     shrinkWrap: true,
@@ -773,8 +617,10 @@ class _HomeUserState extends State<HomeUser> {
                                       Column(
                                         children: <Widget>[
                                           Container(
-                                            width:
-                                            MediaQuery.of(context).size.width / 6,
+                                            width: MediaQuery.of(context)
+                                                    .size
+                                                    .width /
+                                                6,
                                             child: MaterialButton(
                                               child: Image.asset(
                                                 'images/menu/lowongan_baru.png',
@@ -784,11 +630,18 @@ class _HomeUserState extends State<HomeUser> {
                                                     context,
                                                     MaterialPageRoute(
                                                         builder: (context) =>
-                                                        (Home(globalidEmployee: globalid_employee,section: "terbaru",))));
+                                                            (Home(
+                                                              globalidEmployee:
+                                                                  globalid_employee,
+                                                              section:
+                                                                  "terbaru",
+                                                            ))));
                                               },
                                             ),
                                           ),
-                                          SizedBox(height: 5,),
+                                          SizedBox(
+                                            height: 5,
+                                          ),
                                           Text(
                                             'Lowongan',
                                             style: blackTextfont.copyWith(
@@ -801,8 +654,10 @@ class _HomeUserState extends State<HomeUser> {
                                       Column(
                                         children: <Widget>[
                                           Container(
-                                            width:
-                                            MediaQuery.of(context).size.width / 6,
+                                            width: MediaQuery.of(context)
+                                                    .size
+                                                    .width /
+                                                6,
                                             child: MaterialButton(
                                               child: Image.asset(
                                                 'images/menu/learning_baru.png',
@@ -810,28 +665,33 @@ class _HomeUserState extends State<HomeUser> {
                                               onPressed: () {
                                                 mystatus == true
                                                     ? Navigator.push(
-                                                    context,
-                                                    MaterialPageRoute(
-                                                        builder: (context) =>
-                                                        (MenuLearning())))
+                                                        context,
+                                                        MaterialPageRoute(
+                                                            builder: (context) =>
+                                                                (MenuLearning())))
                                                     : Toast.show(
-                                                    "Silahkan login terlebih dahulu",
-                                                    context,
-                                                    duration: 3,
-                                                    gravity: Toast.TOP);
+                                                        "Silahkan login terlebih dahulu",
+                                                        context,
+                                                        duration: 3,
+                                                        gravity: Toast.TOP);
                                               },
                                             ),
                                           ),
-                                          SizedBox(height: 5,),
+                                          SizedBox(
+                                            height: 5,
+                                          ),
                                           Container(
-                                            width:
-                                            MediaQuery.of(context).size.width / 6,
+                                            width: MediaQuery.of(context)
+                                                    .size
+                                                    .width /
+                                                6,
                                             child: Center(
                                               child: Text(
                                                 'Gawe Edu',
                                                 style: blackTextfont.copyWith(
                                                     fontSize: 12,
-                                                    fontWeight: FontWeight.normal),
+                                                    fontWeight:
+                                                        FontWeight.normal),
                                               ),
                                             ),
                                           ),
@@ -840,8 +700,10 @@ class _HomeUserState extends State<HomeUser> {
                                       Column(
                                         children: <Widget>[
                                           Container(
-                                            width:
-                                            MediaQuery.of(context).size.width / 6,
+                                            width: MediaQuery.of(context)
+                                                    .size
+                                                    .width /
+                                                6,
                                             child: MaterialButton(
                                               child: Image.asset(
                                                 'images/menu/media_baru.png',
@@ -851,20 +713,25 @@ class _HomeUserState extends State<HomeUser> {
                                                     context,
                                                     MaterialPageRoute(
                                                         builder: (context) =>
-                                                        (Media())));
+                                                            (Media())));
                                               },
                                             ),
                                           ),
-                                          SizedBox(height: 5,),
+                                          SizedBox(
+                                            height: 5,
+                                          ),
                                           Container(
-                                            width:
-                                            MediaQuery.of(context).size.width / 6,
+                                            width: MediaQuery.of(context)
+                                                    .size
+                                                    .width /
+                                                6,
                                             child: Center(
                                               child: Text(
                                                 'Media',
                                                 style: blackTextfont.copyWith(
                                                     fontSize: 12,
-                                                    fontWeight: FontWeight.normal),
+                                                    fontWeight:
+                                                        FontWeight.normal),
                                               ),
                                             ),
                                           ),
@@ -873,8 +740,10 @@ class _HomeUserState extends State<HomeUser> {
                                       Column(
                                         children: <Widget>[
                                           Container(
-                                            width:
-                                            MediaQuery.of(context).size.width / 6,
+                                            width: MediaQuery.of(context)
+                                                    .size
+                                                    .width /
+                                                6,
                                             child: MaterialButton(
                                               child: Image.asset(
                                                 'images/menu/gawe_harian.png',
@@ -886,20 +755,25 @@ class _HomeUserState extends State<HomeUser> {
                                                 //     context,
                                                 //     MaterialPageRoute(
                                                 //         builder: (context) =>
-                                                //             (ListLowongan_DW())));
+                                                //             (CheckVersion())));
                                               },
                                             ),
                                           ),
-                                          SizedBox(height: 5,),
+                                          SizedBox(
+                                            height: 5,
+                                          ),
                                           Container(
-                                            width:
-                                            MediaQuery.of(context).size.width / 4.5,
+                                            width: MediaQuery.of(context)
+                                                    .size
+                                                    .width /
+                                                4.5,
                                             child: Center(
                                               child: Text(
                                                 'Gawe Harian',
                                                 style: blackTextfont.copyWith(
                                                     fontSize: 12,
-                                                    fontWeight: FontWeight.normal),
+                                                    fontWeight:
+                                                        FontWeight.normal),
                                               ),
                                             ),
                                           ),
@@ -908,15 +782,19 @@ class _HomeUserState extends State<HomeUser> {
                                       Column(
                                         children: <Widget>[
                                           Container(
-                                            width:
-                                            MediaQuery.of(context).size.width / 6,
+                                            width: MediaQuery.of(context)
+                                                    .size
+                                                    .width /
+                                                6,
                                             child: MaterialButton(
                                               child: Image.asset(
                                                 'images/menu/1.png',
                                               ),
                                               onPressed: () {
-                                                Toast.show("Coming soon", context,
-                                                    duration: 3, gravity: Toast.TOP);
+                                                Toast.show(
+                                                    "Coming soon", context,
+                                                    duration: 3,
+                                                    gravity: Toast.TOP);
 
 //                                      Navigator.push(
 //                                          context,
@@ -926,16 +804,21 @@ class _HomeUserState extends State<HomeUser> {
                                               },
                                             ),
                                           ),
-                                          SizedBox(height: 5,),
+                                          SizedBox(
+                                            height: 5,
+                                          ),
                                           Container(
-                                            width:
-                                            MediaQuery.of(context).size.width / 4.5,
+                                            width: MediaQuery.of(context)
+                                                    .size
+                                                    .width /
+                                                4.5,
                                             child: Center(
                                               child: Text(
                                                 'Langganan',
                                                 style: blackTextfont.copyWith(
                                                     fontSize: 12,
-                                                    fontWeight: FontWeight.normal),
+                                                    fontWeight:
+                                                        FontWeight.normal),
                                               ),
                                             ),
                                           ),
@@ -952,14 +835,16 @@ class _HomeUserState extends State<HomeUser> {
                             Padding(
                               padding: const EdgeInsets.all(2.0),
                               child: Row(
-                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceBetween,
                                 children: [
                                   Padding(
                                     padding: const EdgeInsets.only(left: 14),
                                     child: Text(
                                       'Berita Terkini',
                                       style: TextStyle(
-                                          fontWeight: FontWeight.bold, fontSize: 18),
+                                          fontWeight: FontWeight.bold,
+                                          fontSize: 18),
                                     ),
                                   ),
                                   MaterialButton(
@@ -998,24 +883,30 @@ class _HomeUserState extends State<HomeUser> {
                                   return Padding(
                                     padding: const EdgeInsets.all(8.0),
                                     child: Container(
-                                      height: MediaQuery.of(context).size.height / 3,
-                                      width: MediaQuery.of(context).size.width / 2.2,
+                                      height:
+                                          MediaQuery.of(context).size.height /
+                                              3,
+                                      width: MediaQuery.of(context).size.width /
+                                          2.2,
                                       child: InkWell(
                                         onTap: () {
-                                          Navigator.push(
-                                              context,
-                                              MaterialPageRoute(
-                                                  builder: (context) => NewsDetail(
-                                                    title: xnews.title == null
-                                                        ? ""
-                                                        : xnews.title,
-                                                    foto: xnews.foto == null
-                                                        ? ""
-                                                        : xnews.foto,
-                                                    desc: xnews.desc == null
-                                                        ? ""
-                                                        : xnews.desc,
-                                                  )));
+                                          Get.toNamed(RouteName.detailMedia, arguments: xnews);
+                                          // Navigator.push(
+                                          //     context,
+                                          //     MaterialPageRoute(
+                                          //         builder: (context) =>
+                                          //             NewsDetail(
+                                          //               title:
+                                          //                   xnews.title == null
+                                          //                       ? ""
+                                          //                       : xnews.title,
+                                          //               foto: xnews.foto == null
+                                          //                   ? ""
+                                          //                   : xnews.foto,
+                                          //               desc: xnews.desc == null
+                                          //                   ? ""
+                                          //                   : xnews.desc,
+                                          //             )));
                                         },
                                         child: Column(
                                           children: <Widget>[
@@ -1028,10 +919,12 @@ class _HomeUserState extends State<HomeUser> {
                                                 ),
                                                 child: Image.network(
                                                   xnews.foto,
-                                                  width:
-                                                  MediaQuery.of(context).size.width,
-                                                  height:
-                                                  MediaQuery.of(context).size.height /
+                                                  width: MediaQuery.of(context)
+                                                      .size
+                                                      .width,
+                                                  height: MediaQuery.of(context)
+                                                          .size
+                                                          .height /
                                                       9,
                                                   fit: BoxFit.cover,
                                                 ),
@@ -1044,8 +937,10 @@ class _HomeUserState extends State<HomeUser> {
                                               padding: const EdgeInsets.only(
                                                   left: 8, right: 4),
                                               child: Column(
-                                                mainAxisAlignment: MainAxisAlignment.start,
-                                                crossAxisAlignment: CrossAxisAlignment.start,
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment.start,
+                                                crossAxisAlignment:
+                                                    CrossAxisAlignment.start,
                                                 children: [
                                                   Text(
                                                     xnews.title,
@@ -1053,17 +948,24 @@ class _HomeUserState extends State<HomeUser> {
                                                     // softWrap: false,
                                                     style: TextStyle(
                                                       fontSize: 14,
-                                                      fontWeight: FontWeight.normal,
+                                                      fontWeight:
+                                                          FontWeight.normal,
                                                     ),
                                                   ),
-                                                  SizedBox(height: 5,),
+                                                  SizedBox(
+                                                    height: 5,
+                                                  ),
                                                   Text(
-                                                      DateFormat('dd-MM-yyyy').format(xnews.dateCreated).toString(),
+                                                    DateFormat('dd-MM-yyyy')
+                                                        .format(
+                                                            xnews.dateCreated)
+                                                        .toString(),
                                                     maxLines: 2,
                                                     // softWrap: false,
                                                     style: TextStyle(
                                                       fontSize: 12,
-                                                      fontWeight: FontWeight.normal,
+                                                      fontWeight:
+                                                          FontWeight.normal,
                                                     ),
                                                   ),
                                                 ],
@@ -1085,7 +987,8 @@ class _HomeUserState extends State<HomeUser> {
                                   child: Text(
                                     'Lowongan Kerja Terbaru',
                                     style: TextStyle(
-                                        fontWeight: FontWeight.bold, fontSize: 18),
+                                        fontWeight: FontWeight.bold,
+                                        fontSize: 18),
                                   ),
                                 ),
                                 MaterialButton(
@@ -1108,35 +1011,39 @@ class _HomeUserState extends State<HomeUser> {
                                     Navigator.push(
                                         context,
                                         MaterialPageRoute(
-                                            builder: (context) => (Home(globalidEmployee: globalid_employee,section: 'terbaru',))));
+                                            builder: (context) => (Home(
+                                                  globalidEmployee:
+                                                      globalid_employee,
+                                                  section: 'terbaru',
+                                                ))));
                                   },
                                 ),
                               ],
                             ),
                             FutureBuilder(
                               future: getLowongan(),
-                              builder:
-                                  (BuildContext context, AsyncSnapshot snapshot) {
+                              builder: (BuildContext context,
+                                  AsyncSnapshot snapshot) {
                                 return snapshot.hasData
                                     ? ItemListLowongan(
-                                    list: snapshot.data,
-                                    globalid_employee: globalid_employee,
-                                    mystatus: mystatus)
-                                    : Center(child: CircularProgressIndicator());
+                                        list: snapshot.data,
+                                        globalid_employee: globalid_employee,
+                                        mystatus: mystatus)
+                                    : Center(
+                                        child: CircularProgressIndicator());
                               },
                             ),
                           ],
                         )
                       ],
                     ),
-
                   ],
                 ),
-            )
+              )
             : ListView(
                 children: [
                   Padding(
-                    padding: const EdgeInsets.only(left:10.0, right:10),
+                    padding: const EdgeInsets.only(left: 10.0, right: 10),
                     child: Container(
                       //  color: mainColor,
                       child: Card(
@@ -1163,7 +1070,10 @@ class _HomeUserState extends State<HomeUser> {
                     future: search(),
                     builder: (BuildContext context, AsyncSnapshot snapshot) {
                       return snapshot.hasData
-                          ? ItemListSearch(list: snapshot.data,globalid_employee:globalid_employee,mystatus:mystatus)
+                          ? ItemListSearch(
+                              list: snapshot.data,
+                              globalid_employee: globalid_employee,
+                              mystatus: mystatus)
                           : Center(
                               child: CircularProgressIndicator(),
                             );
@@ -1200,7 +1110,7 @@ class ItemListSearch extends StatefulWidget {
   bool mystatus;
   String globalid_employee;
 
-  ItemListSearch({this.list,this.globalid_employee,this.mystatus});
+  ItemListSearch({this.list, this.globalid_employee, this.mystatus});
   @override
   _ItemListSearchState createState() => _ItemListSearchState();
 }
@@ -1209,7 +1119,7 @@ class _ItemListSearchState extends State<ItemListSearch> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left:10.0, right:10),
+      padding: const EdgeInsets.only(left: 10.0, right: 10),
       child: Container(
         height: 850,
         child: ListView.builder(
@@ -1252,10 +1162,11 @@ class _ItemListSearchState extends State<ItemListSearch> {
                                   gajimax: xlowongan.gajiMax == null
                                       ? ""
                                       : xlowongan.gajiMax,
-                                  jenjang_career_id:
-                                      xlowongan.jenjangCareerId.toString() == null
-                                          ? ""
-                                          : xlowongan.jenjangCareerId.toString(),
+                                  jenjang_career_id: xlowongan.jenjangCareerId
+                                              .toString() ==
+                                          null
+                                      ? ""
+                                      : xlowongan.jenjangCareerId.toString(),
                                   pendidikan:
                                       xlowongan.pendidikan.toString() == null
                                           ? ""
@@ -1285,7 +1196,8 @@ class _ItemListSearchState extends State<ItemListSearch> {
                                           ? ""
                                           : xlowongan.deskripsi.toString(),
                                   jenispekerjaan:
-                                      xlowongan.jenispekerjaan.toString() == null
+                                      xlowongan.jenispekerjaan.toString() ==
+                                              null
                                           ? ""
                                           : xlowongan.jenispekerjaan.toString(),
                                   id_perusahaan:
@@ -1296,7 +1208,9 @@ class _ItemListSearchState extends State<ItemListSearch> {
                                       xlowongan.directLink.toString() == null
                                           ? ""
                                           : xlowongan.directLink.toString(),
-                              id_employee: widget.globalid_employee == null ? "" : widget.globalid_employee,
+                                  id_employee: widget.globalid_employee == null
+                                      ? ""
+                                      : widget.globalid_employee,
                                 )));
                   },
                   child: SingleChildScrollView(
@@ -1306,16 +1220,17 @@ class _ItemListSearchState extends State<ItemListSearch> {
                         Row(
                           children: <Widget>[
                             Padding(
-                              padding: const EdgeInsets.only(right: 15,),
+                              padding: const EdgeInsets.only(
+                                right: 15,
+                              ),
                               child: Image.network(
                                 xlowongan.logo,
-                                height:
-                                MediaQuery.of(context).size.height / 12,
+                                height: MediaQuery.of(context).size.height / 12,
                                 width: MediaQuery.of(context).size.width / 5,
                               ),
                             ),
                             Container(
-                              width: MediaQuery.of(context).size.width/1.8,
+                              width: MediaQuery.of(context).size.width / 1.8,
                               child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: <Widget>[
@@ -1337,22 +1252,22 @@ class _ItemListSearchState extends State<ItemListSearch> {
                                   Text(
                                     xlowongan.namaPerusahaan,
                                     style: TextStyle(
-                                        fontSize: 14,
-                                        color: Colors.black
-                                    ),
+                                        fontSize: 14, color: Colors.black),
                                   ),
                                   SizedBox(
                                     height: 5,
                                   ),
-
                                   Row(
                                     children: [
-                                      Icon(Icons.work_rounded, size: 15, color: Colors.grey,),
+                                      Icon(
+                                        Icons.work_rounded,
+                                        size: 15,
+                                        color: Colors.grey,
+                                      ),
                                       Text(
                                         " ${xlowongan.jenispekerjaan}",
                                         style: TextStyle(
-                                            fontSize: 14,
-                                            color: Colors.black),
+                                            fontSize: 14, color: Colors.black),
                                       ),
                                     ],
                                   ),
@@ -1361,11 +1276,16 @@ class _ItemListSearchState extends State<ItemListSearch> {
                                   ),
                                   Column(
                                     mainAxisAlignment: MainAxisAlignment.start,
-                                    crossAxisAlignment: CrossAxisAlignment.start,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
                                     children: [
                                       Row(
                                         children: [
-                                          Icon(Icons.add_location_rounded, size: 15, color: Colors.grey,),
+                                          Icon(
+                                            Icons.add_location_rounded,
+                                            size: 15,
+                                            color: Colors.grey,
+                                          ),
                                           Text(
                                             " ${xlowongan.provinceId}",
                                             overflow: TextOverflow.fade,
@@ -1381,15 +1301,18 @@ class _ItemListSearchState extends State<ItemListSearch> {
                                         height: 5,
                                       ),
                                       Padding(
-                                        padding: const EdgeInsets.only(left:16.0),
-                                        child: Text( xlowongan.distance == null || xlowongan.distance == "-" ? "" :
-                                        " ${xlowongan.distance}",
+                                        padding:
+                                            const EdgeInsets.only(left: 16.0),
+                                        child: Text(
+                                          xlowongan.distance == null ||
+                                                  xlowongan.distance == "-"
+                                              ? ""
+                                              : " ${xlowongan.distance}",
                                           overflow: TextOverflow.fade,
                                           maxLines: 1,
                                           softWrap: false,
                                           style: TextStyle(
-                                              fontSize: 12,
-                                              color: mainColor),
+                                              fontSize: 12, color: mainColor),
                                           textAlign: TextAlign.justify,
                                         ),
                                       ),
@@ -1403,12 +1326,11 @@ class _ItemListSearchState extends State<ItemListSearch> {
                                         Padding(
                                           padding: EdgeInsets.only(
                                               right: MediaQuery.of(context)
-                                                  .size
-                                                  .height /
+                                                      .size
+                                                      .height /
                                                   100),
                                           child: Text(
-                                              xlowongan.pelamarTeks
-                                                  .toString(),
+                                              xlowongan.pelamarTeks.toString(),
                                               style: TextStyle(
                                                 color: Colors.black,
                                                 fontSize: 12,
@@ -1429,7 +1351,6 @@ class _ItemListSearchState extends State<ItemListSearch> {
                             ),
                           ],
                         ),
-
                       ],
                     ),
                   ),

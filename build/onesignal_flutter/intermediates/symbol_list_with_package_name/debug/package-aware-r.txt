@@ -207,6 +207,7 @@ attr initialActivityCount
 attr isLightTheme
 attr itemPadding
 attr keylines
+attr lStar
 attr lastBaselineToBottomHeight
 attr layout
 attr layout_anchor
@@ -837,6 +838,10 @@ id icon_only
 id image
 id info
 id italic
+id item1
+id item2
+id item3
+id item4
 id left
 id light
 id line1
@@ -1002,6 +1007,8 @@ layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
 layout upsdk_app_dl_progress_dialog
 layout upsdk_ota_update_view
+menu example_menu
+menu example_menu2
 raw consumer_onesignal_keep
 string abc_action_bar_home_description
 string abc_action_bar_up_description
@@ -1498,7 +1505,7 @@ styleable ButtonBarLayout allowStacking
 styleable Capability queryPatterns shortcutMatchRequired
 styleable CardView android_minHeight android_minWidth cardBackgroundColor cardCornerRadius cardElevation cardMaxElevation cardPreventCornerOverlap cardUseCompatPadding contentPadding contentPaddingBottom contentPaddingLeft contentPaddingRight contentPaddingTop
 styleable CheckedTextView android_checkMark checkMarkCompat checkMarkTint checkMarkTintMode
-styleable ColorStateListItem alpha android_alpha android_color
+styleable ColorStateListItem alpha android_alpha android_color android_lStar lStar
 styleable CompoundButton android_button buttonCompat buttonTint buttonTintMode
 styleable CoordinatorLayout keylines statusBarBackground
 styleable CoordinatorLayout_Layout android_layout_gravity layout_anchor layout_anchorGravity layout_behavior layout_dodgeInsetEdges layout_insetEdge layout_keyline

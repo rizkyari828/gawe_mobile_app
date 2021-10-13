@@ -3,10 +3,12 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:gaweid2/modules/media/models/ModelNews.dart';
 import 'package:gaweid2/network/NetworkProvider.dart';
+import 'package:gaweid2/routes/routes_pages.dart';
 import 'package:gaweid2/utils/SessionManager.dart';
 import 'package:gaweid2/modules/media/view/news_detail.dart';
 import 'package:http/http.dart' as http;
 import 'package:intl/intl.dart';
+import 'package:get/get.dart';
 
 class NewsPage extends StatefulWidget {
   @override
@@ -78,15 +80,15 @@ class _NewsPageState extends State<NewsPage> {
                 padding: const EdgeInsets.all(8.0),
                 child: InkWell(
                   onTap: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => NewsDetail(
-                                  title:
-                                      xnews.title == null ? "" : xnews.title,
-                                  foto: xnews.foto == null ? "" : xnews.foto,
-                                  desc: xnews.desc == null ? "" : xnews.desc,
-                                )));
+                    // Navigator.push(
+                    //     context,
+                    //     MaterialPageRoute(
+                    //         builder: (context) => NewsDetail(
+                    //               title:
+                    //                   xnews.title == null ? "" : xnews.title,
+                    //               foto: xnews.foto == null ? "" : xnews.foto,
+                    //               desc: xnews.desc == null ? "" : xnews.desc,
+                    //             )));
                   },
                   child: Column(
                     children: <Widget>[
@@ -109,6 +111,10 @@ class _NewsPageState extends State<NewsPage> {
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: <Widget>[
+                                IconButton(
+                                  onPressed: () => Get.toNamed(RouteName.news),
+                                  icon: Icon(Icons.add),
+                                ),
                                 Text(
                                   xnews.title,
                                   overflow: TextOverflow.fade,

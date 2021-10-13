@@ -6,7 +6,6 @@ import 'package:flutter_html/flutter_html.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:gaweid2/modules/user/models/ModelRegister.dart';
 import 'package:gaweid2/modules/learning/models/soal_modul.dart';
-import 'package:gaweid2/network/NetworkP.dart';
 import 'package:gaweid2/network/NetworkProvider.dart';
 import 'package:gaweid2/ui/User/Fragment/HomeUser1.dart';
 import 'package:gaweid2/modules/user/view/menu/UserDashboard.dart';

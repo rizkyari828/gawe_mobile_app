@@ -143,17 +143,6 @@ class _datadiri2State extends State<datadiri2> {
     });
   }
 
-  void versios() async {
-    final response =
-        await http.get(NetworkConfig().baseUrl + "master_api/versi_os");
-    var listdata = jsonDecode(response.body);
-    setState(() {
-      listversisistemoperasi = listdata;
-    });
-
-    print("listversisistemoperasi : $listversisistemoperasi");
-  }
-
   SessionManager sessionManager = SessionManager();
   String register_email, register_hp, register_name;
   int register_iduser;
@@ -273,7 +262,6 @@ class _datadiri2State extends State<datadiri2> {
     // TODO: implement initState
     super.initState();
     minatpekerjaan();
-    versios();
     cityAll();
     getsession_register();
   }
@@ -329,6 +317,11 @@ class _datadiri2State extends State<datadiri2> {
                               // name = value;
                             },
                           ),
+                          SizedBox(height: 5),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 10.0),
+                            child: Text("Jika tidak ada, bisa diisi nomor media chat lain", style: TextStyle(fontSize: 11, color: mainColor)),
+                          ),
                           SizedBox(height: 16),
                           Row(children: <Widget>[
                             Text("No Handphone"),
@@ -351,6 +344,11 @@ class _datadiri2State extends State<datadiri2> {
                             onSaved: (value) {
                               // name = value;
                             },
+                          ),
+                          SizedBox(height: 5),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 10.0),
+                            child: Text("Wajib isi dengan nomor aktif & bisa dihubungi", style: TextStyle(fontSize: 11, color: mainColor)),
                           ),
                           SizedBox(height: 16),
                           Row(children: <Widget>[

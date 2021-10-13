@@ -427,20 +427,20 @@ class _HomeUser2State extends State<HomeUser2> {
                         child: Card(
                           child: InkWell(
                             onTap: () {
-                              Navigator.push(
-                                  context,
-                                  MaterialPageRoute(
-                                      builder: (context) => NewsDetail(
-                                        title: xnews.title == null
-                                            ? ""
-                                            : xnews.title,
-                                        foto: xnews.foto == null
-                                            ? ""
-                                            : xnews.foto,
-                                        desc: xnews.desc == null
-                                            ? ""
-                                            : xnews.desc,
-                                      )));
+                              // Navigator.push(
+                              //     context,
+                              //     MaterialPageRoute(
+                              //         builder: (context) => NewsDetail(
+                              //           title: xnews.title == null
+                              //               ? ""
+                              //               : xnews.title,
+                              //           foto: xnews.foto == null
+                              //               ? ""
+                              //               : xnews.foto,
+                              //           desc: xnews.desc == null
+                              //               ? ""
+                              //               : xnews.desc,
+                              //         )));
                             },
                             child: Column(
                               children: <Widget>[

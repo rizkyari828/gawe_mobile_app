@@ -18,6 +18,7 @@
     <attr format="reference" name="materialButtonStyle"/>
     <attr format="reference" name="materialCardViewStyle"/>
     <attr format="reference" name="navigationViewStyle"/>
+    <attr format="reference" name="nestedScrollViewStyle"/>
     <attr format="color" name="rippleColor"/>
     <attr format="color|reference" name="scrimBackground"/>
     <attr format="reference" name="showMotionSpec"/>
@@ -4330,6 +4331,13 @@
              enough space to lay them out side-by-side. -->
         <attr format="boolean" name="allowStacking"/>
     </declare-styleable>
+    <declare-styleable name="Capability">
+        <!-- Resource reference to the string array of query patterns for a custom capability. -->
+        <attr format="reference" name="queryPatterns"/>
+        <!-- Indicates whether a parameter in a capability template can only contain a matched
+             shortcut id and not an arbitrary string. -->
+        <attr format="boolean" name="shortcutMatchRequired"/>
+    </declare-styleable>
     <declare-styleable name="CardView">
         <!-- Background color for CardView. -->
         <attr format="color" name="cardBackgroundColor"/>
@@ -4616,6 +4624,11 @@
               timeout and wait until a reply is received from the font provider. -->
             <enum name="forever" value="-1"/>
         </attr>
+        <!-- Provides the system font family name to check before downloading the font. For
+        example if the fontProviderQuery asked for "Sans Serif", it is possible to define
+        fontProviderSystemFontFamily as "sans-serif" to tell the system to use "sans-serif" font
+        family if it exists on the system. -->
+        <attr format="string" name="fontProviderSystemFontFamily"/>
     </declare-styleable>
     <declare-styleable name="FontFamilyFont">
         <!-- The style of the given font file. This will be used when the font is being loaded into

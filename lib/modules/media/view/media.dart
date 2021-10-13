@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:gaweid2/modules/media/view/newsNew.dart';
+import 'package:gaweid2/modules/media/view/tipsNew.dart';
 import 'package:gaweid2/network/NetworkProvider.dart';
 import 'package:gaweid2/modules/media/view/event.dart';
 import 'package:gaweid2/modules/media/view/news.dart';
@@ -71,8 +73,8 @@ class _MediaState extends State<Media> with SingleTickerProviderStateMixin{
         ),
       ),
       body: TabBarView(controller: _tabController, children: [
-        NewsPage(),
-        TipsPage(),
+        NewsNew(userId: id_user),
+        TipsNew(),
         EventPage()
       ]),
 

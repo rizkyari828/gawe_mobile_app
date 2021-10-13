@@ -3,13 +3,14 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_html/flutter_html.dart';
 import 'package:gaweid2/utils/theme.dart';
+import 'package:get/get.dart';
 
 class NewsDetail extends StatefulWidget {
-  final title,foto,desc;
-  NewsDetail(
-      {this.title,
-        this.foto,
-        this.desc});
+  // final title,foto,desc;
+  // NewsDetail(
+  //     {this.title,
+  //       this.foto,
+  //       this.desc});
   @override
   _NewsDetailState createState() => _NewsDetailState();
 }
@@ -32,19 +33,19 @@ class _NewsDetailState extends State<NewsDetail> {
               child: Column(
                 children: <Widget>[
                   SizedBox(height: 10,),
-                  Text(widget.title,style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
+                  Text(Get.arguments.title.toString(),style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),),
                   SizedBox(height: 10,),
                   ClipRRect(
                     borderRadius: BorderRadius.circular(8.0),
                     child: Image.network(
-                      widget.foto,
+                      Get.arguments.foto,
                       width: MediaQuery.of(context).size.width,
                       height: MediaQuery.of(context).size.height/4,
                       fit: BoxFit.fill,
                     ),
                   ),
                   SizedBox(height: 10,),
-                   Html(data: widget.desc,),
+                   Html(data: Get.arguments.desc,),
                 ],
               ),
             ),

@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:gaweid2/modules/user/models/ModelRegister.dart';
 import 'package:gaweid2/network/NetworkProvider.dart';
-import 'package:gaweid2/modules/user/view/menu/UserDashboard.dart';
 import 'package:gaweid2/modules/user/view/register/datadiri/datadiri2.dart';
 import 'package:gaweid2/utils/SessionManager.dart';
 import 'package:gaweid2/utils/theme.dart';

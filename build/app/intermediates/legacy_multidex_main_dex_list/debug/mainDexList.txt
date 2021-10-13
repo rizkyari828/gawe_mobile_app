@@ -53,11 +53,14 @@ androidx/annotation/MenuRes.class
 androidx/annotation/NavigationRes.class
 androidx/annotation/NonNull.class
 androidx/annotation/Nullable.class
+androidx/annotation/OptIn.class
 androidx/annotation/PluralsRes.class
 androidx/annotation/Px.class
 androidx/annotation/RawRes.class
 androidx/annotation/RequiresApi.class
 androidx/annotation/RequiresFeature.class
+androidx/annotation/RequiresOptIn$Level.class
+androidx/annotation/RequiresOptIn.class
 androidx/annotation/RequiresPermission$Read.class
 androidx/annotation/RequiresPermission$Write.class
 androidx/annotation/RequiresPermission.class
@@ -114,6 +117,7 @@ androidx/core/content/res/FontResourcesParserCompat$FetchStrategy.class
 androidx/core/graphics/drawable/IconCompat$IconType.class
 androidx/core/location/GnssStatusCompat$ConstellationType.class
 androidx/core/net/ConnectivityManagerCompat$RestrictBackgroundStatus.class
+androidx/core/os/BuildCompat$PrereleaseSdkCheck.class
 androidx/core/provider/FontsContractCompat$FontRequestCallback$FontRequestFailReason.class
 androidx/core/text/util/LinkifyCompat$LinkifyMask.class
 androidx/core/view/ContentInfoCompat$Flags.class
@@ -200,7 +204,6 @@ androidx/webkit/WebSettingsCompat$ForceDarkStrategy.class
 androidx/webkit/WebSettingsCompat$MenuItemFlags.class
 androidx/webkit/WebViewClientCompat$SafeBrowsingThreat.class
 androidx/webkit/WebViewFeature$WebViewSupportFeature.class
-androidx/work/ExperimentalExpeditedWork.class
 com/amolg/flutterbarcodescanner/camera/CameraSource$FlashMode.class
 com/amolg/flutterbarcodescanner/camera/CameraSource$FocusMode.class
 com/android/installreferrer/api/InstallReferrerClient$InstallReferrerResponse.class

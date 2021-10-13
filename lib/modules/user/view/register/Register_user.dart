@@ -3,12 +3,14 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:gaweid2/constant/constant.dart';
+import 'package:gaweid2/modules/user/controllers/registerController.dart';
 import 'package:gaweid2/modules/user/models/ModelRegister.dart';
 
 import 'package:gaweid2/network/NetworkProvider.dart';
 import 'package:gaweid2/modules/user/view/Login.dart';
 import 'package:gaweid2/utils/SessionManager.dart';
 import 'package:gaweid2/utils/theme.dart';
+import 'package:get/get.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:toast/toast.dart';
 import 'package:http/http.dart' as http;
@@ -24,6 +26,7 @@ enum LoginStatus { not_login, Login }
 
 class _RegisterState extends State<Register> {
   bool _isHidePassword = true;
+  final registerC = Get.put(RegisterController());
 
   List dataSumber = [];
   String valsumber;
@@ -38,7 +41,7 @@ class _RegisterState extends State<Register> {
   TextEditingController etEmail = TextEditingController();
   TextEditingController etName = TextEditingController();
   TextEditingController etPassword = TextEditingController();
-  TextEditingController etReferal = TextEditingController();
+  // TextEditingController etReferal = TextEditingController();
   TextEditingController etNo_hp = TextEditingController();
 
   BaseEndPoint network = NetworkProvider();
@@ -81,15 +84,7 @@ class _RegisterState extends State<Register> {
   void checkEmailAndPassowrd() {
     if (_formKey.currentState.validate()) {
       //JIKA TRUE
-      _formKey.currentState.save(); //MAKA FUNGSI SAVE() DIJALANKAN
-
-//       if(valsumber==null){
-//         Toast.show("Email/Password Tidak Boleh Kosong", context,
-//          duration: 3, gravity: Toast.BOTTOM);
-//       }else{
-//         print(valsumber);
-//       }
-
+      _formKey.currentState.save();
       if (etEmail.text.isEmpty ||
           etPassword.text.isEmpty ||
           etName.text.isEmpty ||
@@ -98,18 +93,9 @@ class _RegisterState extends State<Register> {
         Toast.show("Tidak Boleh Kosong", context,
             duration: 3, gravity: Toast.BOTTOM);
       } else {
-        // Toast.show("Login", context, duration: 3, gravity: Toast.BOTTOM);
-        //login();
-
-        //print("data{$data}");
-        //Dialogs.showLoadingDialog(context, _formKey); //invoking login
-
         if (monVal == false) {
           Toast.show("Anda Belum Ceklis Pernyataan Gawe.id", context,
               duration: 3, gravity: Toast.TOP);
-//          setState(() {
-//            monVal = true;
-//          });
         } else {
           setState(() {
             InSignIn = true;
@@ -118,35 +104,25 @@ class _RegisterState extends State<Register> {
         }
       }
     }
-    ;
   }
 
   void sumber() async {
-//    dataProvince = await network.getProvince();
     final response =
         await http.get(NetworkConfig().baseUrl + "master_api/get_sumber");
     var listdata = jsonDecode(response.body);
     setState(() {
       dataSumber = listdata;
     });
-
-    print("data : $dataSumber");
   }
 
   void register() async {
-    print("nama${etName.text.toString()}");
-    print("email${etName.text.toString()}");
-    print("password${etName.text.toString()}");
-    print("no_hp${etNo_hp.text.toString()}");
-    print("sumber${valsumber}");
-
     ModelRegister data = await network.register(
       etName.text.toString(),
       etEmail.text.toString(),
       etPassword.text.toString(),
       etNo_hp.text.toString(),
       valsumber,
-      etReferal.text.toString(),
+      referal.toString(),
     );
 
     Toast.show("${data.status}", context, duration: 3, gravity: Toast.BOTTOM);
@@ -207,8 +183,6 @@ class _RegisterState extends State<Register> {
     super.initState();
     getPreferences();
     sumber();
-
-    //signOut();
   }
 
   @override
@@ -229,16 +203,6 @@ class _RegisterState extends State<Register> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  // FlatButton(
-                  //   child: Icon(
-                  //     Icons.arrow_back,
-                  //     color: Colors.black,
-                  //   ),
-                  //   onPressed: () {
-                  //     Navigator.of(context).pushReplacement(new MaterialPageRoute(
-                  //         builder: (BuildContext context) => UserDashboard()));
-                  //   },
-                  // ),
                   Image.asset(
                     'images/logo_polos.png',
                     height: MediaQuery.of(context).size.height / 8,
@@ -297,7 +261,7 @@ class _RegisterState extends State<Register> {
                       SizedBox(height: 5),
                       Padding(
                         padding: const EdgeInsets.only(left: 10.0),
-                        child: Text("Nama sesuai KTP", style: TextStyle(fontSize: 11)),
+                        child: Text("Nama sesuai KTP", style: TextStyle(fontSize: 11, color: mainColor)),
                       ),
                       SizedBox(height: 10),
                       Card(
@@ -353,32 +317,80 @@ class _RegisterState extends State<Register> {
                           },
                         ),
                       ),
-                      SizedBox(height: 10),
-                      Card(
-                        shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(15.0)),
-                        child: TextFormField(
-                          style: TextStyle(fontSize: 16.0, color: Colors.black),
-                          keyboardType: TextInputType.text,
-                          controller: etReferal,
-                          decoration: InputDecoration(
-                            enabledBorder: UnderlineInputBorder(
-                              borderSide: BorderSide(color: mainColor),
-                              borderRadius: BorderRadius.circular(15),
+                      SizedBox(height: 5),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10.0),
+                        child: Text("Jika tidak ada, bisa diisi nomor media chat lain", style: TextStyle(fontSize: 11, color: mainColor)),
+                      ),
+                      SizedBox(height: 12),
+                      Container(
+                        height: 60,
+                        width: MediaQuery.of(context).size.height,
+                        child: Card(
+                          shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(15.0)),
+                          child: Padding(
+                            padding: const EdgeInsets.only(left:8.0),
+                            child: DropdownSearch<dynamic>(
+                              searchBoxDecoration: InputDecoration(
+                                enabledBorder: UnderlineInputBorder(
+                                  borderSide: BorderSide(color: mainColor),
+                                ),
+                              ),
+                              dropdownSearchDecoration: InputDecoration(
+                                enabledBorder: UnderlineInputBorder(
+                                  borderSide: BorderSide(color: mainColor),
+                                ),
+                              ),
+                              items: registerC.referrals.map((item) {
+                                return item['referral_code'];
+                              }).toList(),
+                              maxHeight: 300,
+                              hint: "Referral Code",
+                              onChanged: (value) async {
+                                // dataCity = await network.getCity(value);
+                                setState(() {
+                                  referal = value.toString();
+                                  // valCity = null;
+                                });
+                                //print(dataCity);
+                              },
+                              showSearchBox: true,
+
                             ),
-                            filled: true,
-                            border: OutlineInputBorder(
-                              borderRadius: BorderRadius.circular(15),
-                            ),
-                            //labelText: "No Hp",
-                            hintText: "Referral Code",
                           ),
-                          // validator: (value) => value.length < 6 ? 'Password too short.' : null,
-                          onSaved: (value) {
-                            referal = value;
-                          },
                         ),
                       ),
+                      SizedBox(height: 5),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 10.0),
+                        child: Text("Pilih jika ada", style: TextStyle(fontSize: 11, color: mainColor)),
+                      ),
+                      // Card(
+                      //   shape: RoundedRectangleBorder(
+                      //       borderRadius: BorderRadius.circular(15.0)),
+                      //   child: TextFormField(
+                      //     style: TextStyle(fontSize: 16.0, color: Colors.black),
+                      //     keyboardType: TextInputType.text,
+                      //     controller: etReferal,
+                      //     decoration: InputDecoration(
+                      //       enabledBorder: UnderlineInputBorder(
+                      //         borderSide: BorderSide(color: mainColor),
+                      //         borderRadius: BorderRadius.circular(15),
+                      //       ),
+                      //       filled: true,
+                      //       border: OutlineInputBorder(
+                      //         borderRadius: BorderRadius.circular(15),
+                      //       ),
+                      //       //labelText: "No Hp",
+                      //       hintText: "Referral Code",
+                      //     ),
+                      //     // validator: (value) => value.length < 6 ? 'Password too short.' : null,
+                      //     onSaved: (value) {
+                      //       referal = value;
+                      //     },
+                      //   ),
+                      // ),
 
                       SizedBox(height: 10),
                       Card(
@@ -424,36 +436,6 @@ class _RegisterState extends State<Register> {
                         ),
                       ),
                       SizedBox(height: 10),
-                      // Container(
-                      //   width: MediaQuery.of(context).size.height,
-                      //   child: Card(
-                      //     shape: RoundedRectangleBorder(
-                      //         borderRadius: BorderRadius.circular(15.0)),
-                      //     child: Padding(
-                      //       padding: const EdgeInsets.all(8.0),
-                      //       child: DropdownButton(
-                      //         style:
-                      //         TextStyle(fontSize: 16.0, color: Colors.black),
-                      //         value: valsumber,
-                      //         hint: Text("Pilih sumber"),
-                      //         items: dataSumber.map((item) {
-                      //           return DropdownMenuItem(
-                      //             child: Text(item['title']),
-                      //             value: item['title'],
-                      //           );
-                      //         }).toList(),
-                      //         onChanged: (value) async {
-                      //           // dataCity = await network.getCity(value);
-                      //           setState(() {
-                      //             valsumber = value;
-                      //             // valCity = null;
-                      //           });
-                      //           //print(dataCity);
-                      //         },
-                      //       ),
-                      //     ),
-                      //   ),
-                      // ),
                       Container(
                         height: 60,
                         width: MediaQuery.of(context).size.height,

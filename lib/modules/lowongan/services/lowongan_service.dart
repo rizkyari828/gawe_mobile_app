@@ -8,6 +8,7 @@ import 'package:http/http.dart' as http;
 
 class ApiHelper {
   getCoins([String id,String section, String url]) async {
+    print(NetworkConfig().baseUrl+"apps/lowongan_pagination?id="+id+"&section="+section);
     var data = await http.get(url ?? NetworkConfig().baseUrl+"apps/lowongan_pagination?id="+id+"&section="+section);
     print(data.body);
     LowonganPagination listdata = lowonganPaginationFromJson(data.body);

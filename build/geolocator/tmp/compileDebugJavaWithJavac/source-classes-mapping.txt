@@ -27,17 +27,17 @@ com/baseflow/geolocator/data/wrapper/MethodResponse.java
  com.baseflow.geolocator.data.wrapper.MethodResponse
 com/baseflow/geolocator/tasks/Task.java
  com.baseflow.geolocator.tasks.Task
-com/baseflow/geolocator/tasks/LastKnownLocationUsingLocationServicesTask.java
- com.baseflow.geolocator.tasks.LastKnownLocationUsingLocationServicesTask
- com.baseflow.geolocator.tasks.LastKnownLocationUsingLocationServicesTask$1
- com.baseflow.geolocator.tasks.LastKnownLocationUsingLocationServicesTask$2
+com/baseflow/geolocator/tasks/ReverseGeocodingTask.java
+ com.baseflow.geolocator.tasks.ReverseGeocodingTask
+ com.baseflow.geolocator.tasks.ReverseGeocodingTask$1
 com/baseflow/geolocator/tasks/LocationUpdatesUsingLocationServicesTask.java
  com.baseflow.geolocator.tasks.LocationUpdatesUsingLocationServicesTask
  com.baseflow.geolocator.tasks.LocationUpdatesUsingLocationServicesTask$1
  com.baseflow.geolocator.tasks.LocationUpdatesUsingLocationServicesTask$2
-com/baseflow/geolocator/tasks/ReverseGeocodingTask.java
- com.baseflow.geolocator.tasks.ReverseGeocodingTask
- com.baseflow.geolocator.tasks.ReverseGeocodingTask$1
+com/baseflow/geolocator/tasks/LastKnownLocationUsingLocationServicesTask.java
+ com.baseflow.geolocator.tasks.LastKnownLocationUsingLocationServicesTask
+ com.baseflow.geolocator.tasks.LastKnownLocationUsingLocationServicesTask$1
+ com.baseflow.geolocator.tasks.LastKnownLocationUsingLocationServicesTask$2
 com/baseflow/geolocator/tasks/LastKnownLocationUsingLocationManagerTask.java
  com.baseflow.geolocator.tasks.LastKnownLocationUsingLocationManagerTask
 com/baseflow/geolocator/data/ReverseGeocodingOptions.java

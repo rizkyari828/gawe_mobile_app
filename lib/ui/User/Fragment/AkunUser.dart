@@ -24,6 +24,7 @@ import 'package:gaweid2/modules/user/view/editAkun/resume.dart';
 import 'package:gaweid2/modules/user/view/menu/UserDashboard.dart';
 import 'package:gaweid2/modules/maps/view/maps.dart';
 import 'package:gaweid2/utils/SessionManager.dart';
+import 'package:gaweid2/utils/checkUpdate.dart';
 import 'package:gaweid2/utils/theme.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
@@ -1136,6 +1137,11 @@ class _AkunUserState extends State<AkunUser> {
                                   fontSize: 16),
                             ),
                           ),
+                          TextButton(onPressed: () {Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                          builder: (context) =>
+                          (CheckUpdate())));}, child: Text("-")),
                           Expanded(
                             child: Align(
                               alignment: Alignment.centerRight,

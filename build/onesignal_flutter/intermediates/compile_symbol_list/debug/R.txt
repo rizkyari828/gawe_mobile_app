@@ -206,6 +206,7 @@ int attr initialActivityCount 0x0
 int attr isLightTheme 0x0
 int attr itemPadding 0x0
 int attr keylines 0x0
+int attr lStar 0x0
 int attr lastBaselineToBottomHeight 0x0
 int attr layout 0x0
 int attr layout_anchor 0x0
@@ -836,6 +837,10 @@ int id icon_only 0x0
 int id image 0x0
 int id info 0x0
 int id italic 0x0
+int id item1 0x0
+int id item2 0x0
+int id item3 0x0
+int id item4 0x0
 int id left 0x0
 int id light 0x0
 int id line1 0x0
@@ -1001,6 +1006,8 @@ int layout select_dialog_singlechoice_material 0x0
 int layout support_simple_spinner_dropdown_item 0x0
 int layout upsdk_app_dl_progress_dialog 0x0
 int layout upsdk_ota_update_view 0x0
+int menu example_menu 0x0
+int menu example_menu2 0x0
 int raw consumer_onesignal_keep 0x0
 int string abc_action_bar_home_description 0x0
 int string abc_action_bar_up_description 0x0
@@ -1740,10 +1747,12 @@ int styleable CheckedTextView_android_checkMark 0
 int styleable CheckedTextView_checkMarkCompat 1
 int styleable CheckedTextView_checkMarkTint 2
 int styleable CheckedTextView_checkMarkTintMode 3
-int[] styleable ColorStateListItem { 0x0, 0x101031f, 0x10101a5 }
+int[] styleable ColorStateListItem { 0x0, 0x101031f, 0x10101a5, 0x0, 0x0 }
 int styleable ColorStateListItem_alpha 0
 int styleable ColorStateListItem_android_alpha 1
 int styleable ColorStateListItem_android_color 2
+int styleable ColorStateListItem_android_lStar 3
+int styleable ColorStateListItem_lStar 4
 int[] styleable CompoundButton { 0x1010107, 0x0, 0x0, 0x0 }
 int styleable CompoundButton_android_button 0
 int styleable CompoundButton_buttonCompat 1
