@@ -1,9 +1,0 @@
-zhuoyuan/li/fluttershareme/BuildConfig.java
- zhuoyuan.li.fluttershareme.BuildConfig
-zhuoyuan/li/fluttershareme/util/FileUtil.java
- zhuoyuan.li.fluttershareme.util.FileUtil
-zhuoyuan/li/fluttershareme/FlutterShareMePlugin.java
- zhuoyuan.li.fluttershareme.FlutterShareMePlugin
- zhuoyuan.li.fluttershareme.FlutterShareMePlugin$1
-zhuoyuan/li/fluttershareme/util/ShareFileProvider.java
- zhuoyuan.li.fluttershareme.util.ShareFileProvider

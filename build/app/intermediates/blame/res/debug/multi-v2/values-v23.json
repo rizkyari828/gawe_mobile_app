@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/tama/Developer/Flutter Project/gaweid2/build/app/intermediates/incremental/mergeDebugResources/merged.dir/values-v23/values-v23.xml",
+            "outputFile": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
             "map": [
                 {
-                    "source": "/home/tama/.gradle/caches/transforms-3/5292c2654755ac4bb5e683ccc18fd4cc/transformed/work-runtime-2.7.0-rc01/res/values-v23/values-v23.xml",
+                    "source": "D:\\Users\\bsi50164\\.gradle\\caches\\transforms-2\\files-2.1\\b2ae4dd85a24b310a1273d6fdf9b3361\\work-runtime-2.7.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
@@ -14,7 +14,7 @@
                     }
                 },
                 {
-                    "source": "/home/tama/.gradle/caches/transforms-3/c9d5a6f2504c6039473bbbfa804406d6/transformed/appcompat-1.2.0/res/values-v23/values-v23.xml",
+                    "source": "D:\\Users\\bsi50164\\.gradle\\caches\\transforms-2\\files-2.1\\2ef8cc09b990c5def68492299a032701\\appcompat-1.2.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -33,7 +33,7 @@
                     }
                 },
                 {
-                    "source": "/home/tama/.gradle/caches/transforms-3/bf76e3d1fd280d4dadcf34c137da1e5b/transformed/cardview-1.0.0/res/values-v23/values-v23.xml",
+                    "source": "D:\\Users\\bsi50164\\.gradle\\caches\\transforms-2\\files-2.1\\d02f680d11b7b3882b0d1443eb1ce486\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

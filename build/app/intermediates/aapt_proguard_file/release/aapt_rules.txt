@@ -1,0 +1,191 @@
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:70
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:427
+-keep class androidx.room.MultiInstanceInvalidationService { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:307
+-keep class androidx.startup.InitializationProvider { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:338
+-keep class androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:348
+-keep class androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:368
+-keep class androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:358
+-keep class androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:388
+-keep class androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:377
+-keep class androidx.work.impl.background.systemalarm.RescheduleReceiver { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:316
+-keep class androidx.work.impl.background.systemalarm.SystemAlarmService { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:321
+-keep class androidx.work.impl.background.systemjob.SystemJobService { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:397
+-keep class androidx.work.impl.diagnostics.DiagnosticsReceiver { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:327
+-keep class androidx.work.impl.foreground.SystemForegroundService { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:333
+-keep class androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:284
+-keep class com.google.android.datatransport.runtime.backends.TransportBackendDiscovery { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:437
+-keep class com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:431
+-keep class com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:302
+-keep class com.google.android.gms.common.api.GoogleApiActivity { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:417
+-keep class com.google.android.gms.measurement.AppMeasurementJobService { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:407
+-keep class com.google.android.gms.measurement.AppMeasurementReceiver { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:413
+-keep class com.google.android.gms.measurement.AppMeasurementService { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:453
+-keep class com.google.android.play.core.assetpacks.AssetPackExtractionService { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:447
+-keep class com.google.android.play.core.common.PlayCoreDialogWrapperActivity { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:440
+-keep class com.google.android.play.core.missingsplits.PlayCoreMissingSplitsActivity { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:117
+-keep class com.google.firebase.components.ComponentDiscoveryService { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:264
+-keep class com.google.firebase.iid.FirebaseInstanceIdReceiver { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:276
+-keep class com.google.firebase.messaging.FirebaseMessagingService { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:292
+-keep class com.google.firebase.provider.FirebaseInitProvider { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:247
+-keep class com.onesignal.BootUpReceiver { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:196
+-keep class com.onesignal.FCMBroadcastReceiver { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:226
+-keep class com.onesignal.FCMIntentJobService { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:225
+-keep class com.onesignal.FCMIntentService { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:232
+-keep class com.onesignal.FocusDelaySyncJobService { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:229
+-keep class com.onesignal.FocusDelaySyncService { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:208
+-keep class com.onesignal.HmsMessageServiceOneSignal { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:246
+-keep class com.onesignal.NotificationDismissReceiver { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:216
+-keep class com.onesignal.NotificationOpenedActivityHMS { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:259
+-keep class com.onesignal.NotificationOpenedReceiver { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:242
+-keep class com.onesignal.PermissionsActivity { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:238
+-keep class com.onesignal.SyncJobService { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:235
+-keep class com.onesignal.SyncService { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:253
+-keep class com.onesignal.UpgradeReceiver { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:175
+-keep class com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ActionBroadcastReceiver { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:171
+-keep class com.pichillilorenzo.flutter_inappwebview.chrome_custom_tabs.ChromeCustomTabsActivity { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:167
+-keep class com.pichillilorenzo.flutter_inappwebview.in_app_browser.InAppBrowserActivity { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:181
+-keep class dev.fluttercommunity.plus.share.ShareFileProvider { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:79
+-keep class id.gawe.gaweid2.MainActivity { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:70
+-keep class io.flutter.app.FlutterApplication { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:157
+-keep class io.flutter.plugins.imagepicker.ImagePickerFileProvider { <init>(); }
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\release\AndroidManifest.xml:191
+-keep class io.flutter.plugins.urllauncher.WebViewActivity { <init>(); }
+# Referenced at D:\Users\bsi50164\.gradle\caches\transforms-2\files-2.1\2ef8cc09b990c5def68492299a032701\appcompat-1.2.0\res\layout\abc_alert_dialog_button_bar_material.xml:43
+# Referenced at D:\Users\bsi50164\.gradle\caches\transforms-2\files-2.1\2ef8cc09b990c5def68492299a032701\appcompat-1.2.0\res\layout\abc_alert_dialog_material.xml:52
+# Referenced at D:\Users\bsi50164\.gradle\caches\transforms-2\files-2.1\2ef8cc09b990c5def68492299a032701\appcompat-1.2.0\res\layout\abc_alert_dialog_title_material.xml:57
+-keep class android.widget.Space { <init>(...); }
+
+# Referenced at D:\Users\bsi50164\.gradle\caches\transforms-2\files-2.1\2ef8cc09b990c5def68492299a032701\appcompat-1.2.0\res\layout\abc_select_dialog_material.xml:23
+-keep class androidx.appcompat.app.AlertController$RecycleListView { <init>(...); }
+
+# Referenced at D:\Users\bsi50164\.gradle\caches\transforms-2\files-2.1\2ef8cc09b990c5def68492299a032701\appcompat-1.2.0\res\layout\abc_action_menu_item_layout.xml:17
+-keep class androidx.appcompat.view.menu.ActionMenuItemView { <init>(...); }
+
+# Referenced at D:\Users\bsi50164\.gradle\caches\transforms-2\files-2.1\2ef8cc09b990c5def68492299a032701\appcompat-1.2.0\res\layout\abc_expanded_menu_layout.xml:17
+-keep class androidx.appcompat.view.menu.ExpandedMenuView { <init>(...); }
+
+# Referenced at D:\Users\bsi50164\.gradle\caches\transforms-2\files-2.1\2ef8cc09b990c5def68492299a032701\appcompat-1.2.0\res\layout\abc_cascading_menu_item_layout.xml:20
+# Referenced at D:\Users\bsi50164\.gradle\caches\transforms-2\files-2.1\2ef8cc09b990c5def68492299a032701\appcompat-1.2.0\res\layout\abc_list_menu_item_layout.xml:17
+# Referenced at D:\Users\bsi50164\.gradle\caches\transforms-2\files-2.1\2ef8cc09b990c5def68492299a032701\appcompat-1.2.0\res\layout\abc_popup_menu_item_layout.xml:17
+-keep class androidx.appcompat.view.menu.ListMenuItemView { <init>(...); }
+
+# Referenced at D:\Users\bsi50164\.gradle\caches\transforms-2\files-2.1\2ef8cc09b990c5def68492299a032701\appcompat-1.2.0\res\layout\abc_screen_toolbar.xml:27
+-keep class androidx.appcompat.widget.ActionBarContainer { <init>(...); }
+
+# Referenced at D:\Users\bsi50164\.gradle\caches\transforms-2\files-2.1\2ef8cc09b990c5def68492299a032701\appcompat-1.2.0\res\layout\abc_action_mode_bar.xml:19
+# Referenced at D:\Users\bsi50164\.gradle\caches\transforms-2\files-2.1\2ef8cc09b990c5def68492299a032701\appcompat-1.2.0\res\layout\abc_screen_toolbar.xml:43
+-keep class androidx.appcompat.widget.ActionBarContextView { <init>(...); }
+
+# Referenced at D:\Users\bsi50164\.gradle\caches\transforms-2\files-2.1\2ef8cc09b990c5def68492299a032701\appcompat-1.2.0\res\layout\abc_screen_toolbar.xml:17
+-keep class androidx.appcompat.widget.ActionBarOverlayLayout { <init>(...); }
+
+# Referenced at D:\Users\bsi50164\.gradle\caches\transforms-2\files-2.1\2ef8cc09b990c5def68492299a032701\appcompat-1.2.0\res\layout\abc_action_menu_layout.xml:17
+-keep class androidx.appcompat.widget.ActionMenuView { <init>(...); }
+
+# Referenced at D:\Users\bsi50164\.gradle\caches\transforms-2\files-2.1\2ef8cc09b990c5def68492299a032701\appcompat-1.2.0\res\layout\abc_activity_chooser_view.xml:19
+-keep class androidx.appcompat.widget.ActivityChooserView$InnerLayout { <init>(...); }
+
+# Referenced at D:\Users\bsi50164\.gradle\caches\transforms-2\files-2.1\2ef8cc09b990c5def68492299a032701\appcompat-1.2.0\res\layout\abc_alert_dialog_material.xml:18
+-keep class androidx.appcompat.widget.AlertDialogLayout { <init>(...); }
+
+# Referenced at D:\Users\bsi50164\.gradle\caches\transforms-2\files-2.1\2ef8cc09b990c5def68492299a032701\appcompat-1.2.0\res\layout\abc_alert_dialog_button_bar_material.xml:26
+-keep class androidx.appcompat.widget.ButtonBarLayout { <init>(...); }
+
+# Referenced at D:\Users\bsi50164\.gradle\caches\transforms-2\files-2.1\2ef8cc09b990c5def68492299a032701\appcompat-1.2.0\res\layout\abc_screen_content_include.xml:19
+-keep class androidx.appcompat.widget.ContentFrameLayout { <init>(...); }
+
+# Referenced at D:\Users\bsi50164\.gradle\caches\transforms-2\files-2.1\2ef8cc09b990c5def68492299a032701\appcompat-1.2.0\res\layout\abc_alert_dialog_title_material.xml:45
+-keep class androidx.appcompat.widget.DialogTitle { <init>(...); }
+
+# Referenced at D:\Users\bsi50164\.gradle\caches\transforms-2\files-2.1\2ef8cc09b990c5def68492299a032701\appcompat-1.2.0\res\layout\abc_screen_simple_overlay_action_mode.xml:23
+-keep class androidx.appcompat.widget.FitWindowsFrameLayout { <init>(...); }
+
+# Referenced at D:\Users\bsi50164\.gradle\caches\transforms-2\files-2.1\2ef8cc09b990c5def68492299a032701\appcompat-1.2.0\res\layout\abc_dialog_title_material.xml:22
+# Referenced at D:\Users\bsi50164\.gradle\caches\transforms-2\files-2.1\2ef8cc09b990c5def68492299a032701\appcompat-1.2.0\res\layout\abc_screen_simple.xml:17
+-keep class androidx.appcompat.widget.FitWindowsLinearLayout { <init>(...); }
+
+# Referenced at D:\Users\bsi50164\.gradle\caches\transforms-2\files-2.1\2ef8cc09b990c5def68492299a032701\appcompat-1.2.0\res\layout\abc_search_view.xml:75
+-keep class androidx.appcompat.widget.SearchView$SearchAutoComplete { <init>(...); }
+
+# Referenced at D:\Users\bsi50164\.gradle\caches\transforms-2\files-2.1\2ef8cc09b990c5def68492299a032701\appcompat-1.2.0\res\layout\abc_screen_toolbar.xml:36
+-keep class androidx.appcompat.widget.Toolbar { <init>(...); }
+
+# Referenced at D:\Users\bsi50164\.gradle\caches\transforms-2\files-2.1\2ef8cc09b990c5def68492299a032701\appcompat-1.2.0\res\layout\abc_screen_simple.xml:25
+# Referenced at D:\Users\bsi50164\.gradle\caches\transforms-2\files-2.1\2ef8cc09b990c5def68492299a032701\appcompat-1.2.0\res\layout\abc_screen_simple_overlay_action_mode.xml:32
+-keep class androidx.appcompat.widget.ViewStubCompat { <init>(...); }
+
+# Referenced at D:\Users\bsi50164\.gradle\caches\transforms-2\files-2.1\42dacb1ea334d42befbeb015ecb7cb1b\browser-1.3.0\res\layout\browser_actions_context_menu_page.xml:17
+-keep class androidx.browser.browseractions.BrowserActionsFallbackMenuView { <init>(...); }
+
+# Referenced at D:\Users\bsi50164\.gradle\caches\transforms-2\files-2.1\2ef8cc09b990c5def68492299a032701\appcompat-1.2.0\res\layout\abc_alert_dialog_material.xml:41
+-keep class androidx.core.widget.NestedScrollView { <init>(...); }
+
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\flutter_inappwebview\intermediates\packaged_res\release\layout\activity_web_view.xml:17
+-keep class com.pichillilorenzo.flutter_inappwebview.in_app_webview.InAppWebView { <init>(...); }
+
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\flutter_inappwebview\intermediates\packaged_res\release\layout\activity_web_view.xml:13
+-keep class com.pichillilorenzo.flutter_inappwebview.pull_to_refresh.PullToRefreshLayout { <init>(...); }
+
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\flutter_inappwebview\intermediates\packaged_res\release\menu\menu_main.xml:36
+-keepclassmembers class * { *** closeButtonClicked(android.view.MenuItem); }
+
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\flutter_inappwebview\intermediates\packaged_res\release\menu\menu_main.xml:8
+-keepclassmembers class * { *** goBackButtonClicked(android.view.MenuItem); }
+
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\flutter_inappwebview\intermediates\packaged_res\release\menu\menu_main.xml:15
+-keepclassmembers class * { *** goForwardButtonClicked(android.view.MenuItem); }
+
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\flutter_inappwebview\intermediates\packaged_res\release\menu\menu_main.xml:29
+-keepclassmembers class * { *** reloadButtonClicked(android.view.MenuItem); }
+
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\flutter_inappwebview\intermediates\packaged_res\release\menu\menu_main.xml:22
+-keepclassmembers class * { *** shareButtonClicked(android.view.MenuItem); }
+

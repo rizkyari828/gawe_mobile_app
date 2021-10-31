@@ -1,4 +1,5 @@
 import 'dart:convert';
+import 'dart:io';
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
@@ -9,7 +10,9 @@ import 'package:gaweid2/utils/theme.dart';
 import 'package:toast/toast.dart';
 import 'package:gaweid2/network/NetworkProvider.dart';
 import 'package:http/http.dart' as http;
-import 'package:flutter_share/flutter_share.dart';
+// import 'package:flutter_share/flutter_share.dart';
+import 'package:share_plus/share_plus.dart';
+import 'package:path_provider/path_provider.dart';
 
 class ItemListLowongan extends StatefulWidget {
   List list;
@@ -35,11 +38,19 @@ class _ItemListLowonganState extends State<ItemListLowongan> {
         itemBuilder: (context, index) {
           final xlowongan = widget.list[index];
           Future<void> share() async {
-            await FlutterShare.share(
-                title: 'Lowongan',
-                text: '${xlowongan.posisi}',
-                linkUrl: 'https://gawe.id/lowongan/detail/${base64.encode(utf8.encode(xlowongan.idLowongan))}',
-                chooserTitle: 'Share Lowongan');
+            final urlImage = xlowongan.logo;
+            final url = Uri.parse(urlImage);
+            final response = await http.get(url);
+            final bytes = response.bodyBytes;
+            final temp = await getTemporaryDirectory();
+            final path = '${temp.path}/image.jpg';
+            File(path).writeAsBytesSync(bytes);
+            await Share.shareFiles([path], text: '${xlowongan.posisi} (${xlowongan.namaPerusahaan})\n https://gawe.id/lowongan/detail/${base64.encode(utf8.encode(xlowongan.idLowongan))}');
+            // await FlutterShare.share(
+            //     title: 'Lowongan',
+            //     text: '${xlowongan.posisi}',
+            //     linkUrl: 'https://gawe.id/lowongan/detail/${base64.encode(utf8.encode(xlowongan.idLowongan))}',
+            //     chooserTitle: 'Share Lowongan');
           }
           return Card(
             margin: new EdgeInsets.only(

@@ -29,7 +29,7 @@ import 'package:http/http.dart' as http;
 import 'package:intl/intl.dart';
 import 'package:toast/toast.dart';
 // import 'package:geolocator/geolocator.dart';
-import 'package:onesignal_flutter/onesignal_flutter.dart';
+// import 'package:onesignal_flutter/onesignal_flutter.dart';
 import 'package:gaweid2/modules/media/models/ModelNews.dart';
 import 'package:uni_links/uni_links.dart';
 import 'package:url_launcher/url_launcher.dart';
@@ -303,94 +303,94 @@ class _HomeUserState extends State<HomeUser> {
           }
           // List<String> split(String path) => context.split(path);
         }));
-    OneSignal.shared
-        .setNotificationOpenedHandler((OSNotificationOpenedResult result) {
-      // Will be called whenever a notification is opened/button pressed.
-    });
+    // OneSignal.shared
+    //     .setNotificationOpenedHandler((OSNotificationOpenedResult result) {
+    //   // Will be called whenever a notification is opened/button pressed.
+    // });
 
-    OneSignal.shared
-        .setNotificationOpenedHandler((OSNotificationOpenedResult result) {
-      // print("Opened notification: \n${result.notification.jsonRepresentation().replaceAll("\\n", "\n")}");
-      print(
-          "Opened notification: \n${result.notification.additionalData["id_lowongan"]}");
-      print("Opened notification: \n${result.notification.additionalData}");
-      var data = result.notification;
-      // this.setState(() {!
-      Navigator.push(
-          context,
-          MaterialPageRoute(
-              builder: (context) => Detail_lowongan(
-                    logo: data.additionalData["logo"] == null
-                        ? ""
-                        : data.additionalData["logo"],
-                    provinsi: data.additionalData["province_id"] == null
-                        ? ""
-                        : data.additionalData["province_id"],
-                    posisi: data.additionalData["posisi"] == null
-                        ? ""
-                        : data.additionalData["posisi"],
-                    id: data.additionalData["id_lowongan"] == null
-                        ? ""
-                        : data.additionalData["id_lowongan"],
-                    perusahaan: data.additionalData["nama_perusahaan"] == null
-                        ? ""
-                        : data.additionalData["nama_perusahaan"],
-                    gajimin: data.additionalData["gaji_min"] == null
-                        ? ""
-                        : data.additionalData["gaji_min"],
-                    gajimax: data.additionalData["gaji_max"] == null
-                        ? ""
-                        : data.additionalData["gaji_max"],
-                    jenjang_career_id: data.additionalData["jenjang_career_id"]
-                                .toString() ==
-                            null
-                        ? ""
-                        : data.additionalData["jenjang_career_id"].toString(),
-                    pendidikan:
-                        data.additionalData["pendidikan"].toString() == null
-                            ? ""
-                            : data.additionalData["pendidikan"].toString(),
-                    city_id: data.additionalData["city_id"].toString() == ""
-                        ? ""
-                        : data.additionalData["city_id"].toString(),
-                    pengalaman:
-                        data.additionalData["pengalaman_id"].toString() == null
-                            ? ""
-                            : data.additionalData["pengalaman_id"].toString(),
-                    rincian: data.additionalData["rincian"].toString() == null
-                        ? ""
-                        : data.additionalData["rincian"].toString(),
-                    kualifikasi:
-                        data.additionalData["kualifikasi"].toString() == null
-                            ? ""
-                            : data.additionalData["kualifikasi"].toString(),
-                    kuota: data.additionalData["kuota"].toString() == null
-                        ? ""
-                        : data.additionalData["kuota"].toString(),
-                    alamat: data.additionalData["alamat"].toString() == null
-                        ? ""
-                        : data.additionalData["alamat"].toString(),
-                    deskripsi:
-                        data.additionalData["deskripsi"].toString() == null
-                            ? ""
-                            : data.additionalData["deskripsi"].toString(),
-                    jenispekerjaan:
-                        data.additionalData["jenis_pekerjaan"].toString() ==
-                                null
-                            ? ""
-                            : data.additionalData["jenis_pekerjaan"].toString(),
-                    datePostEnd:
-                        data.additionalData["date_post_end"].toString() == null
-                            ? ""
-                            : data.additionalData["date_post_end"].toString(),
-                    directLink:
-                        data.additionalData["direct_link"].toString() == null
-                            ? ""
-                            : data.additionalData["direct_link"].toString(),
-                    id_employee:
-                        globalid_employee == null ? "" : globalid_employee,
-                  )));
-    });
+    // OneSignal.shared
+    //     .setNotificationOpenedHandler((OSNotificationOpenedResult result) {
+    //   // print("Opened notification: \n${result.notification.jsonRepresentation().replaceAll("\\n", "\n")}");
+    //   print(
+    //       "Opened notification: \n${result.notification.additionalData["id_lowongan"]}");
+    //   print("Opened notification: \n${result.notification.additionalData}");
+    //   var data = result.notification;
+    //   // this.setState(() {!
+    //   Navigator.push(
+    //       context,
+    //       MaterialPageRoute(
+    //           builder: (context) => Detail_lowongan(
+    //                 logo: data.additionalData["logo"] == null
+    //                     ? ""
+    //                     : data.additionalData["logo"],
+    //                 provinsi: data.additionalData["province_id"] == null
+    //                     ? ""
+    //                     : data.additionalData["province_id"],
+    //                 posisi: data.additionalData["posisi"] == null
+    //                     ? ""
+    //                     : data.additionalData["posisi"],
+    //                 id: data.additionalData["id_lowongan"] == null
+    //                     ? ""
+    //                     : data.additionalData["id_lowongan"],
+    //                 perusahaan: data.additionalData["nama_perusahaan"] == null
+    //                     ? ""
+    //                     : data.additionalData["nama_perusahaan"],
+    //                 gajimin: data.additionalData["gaji_min"] == null
+    //                     ? ""
+    //                     : data.additionalData["gaji_min"],
+    //                 gajimax: data.additionalData["gaji_max"] == null
+    //                     ? ""
+    //                     : data.additionalData["gaji_max"],
+    //                 jenjang_career_id: data.additionalData["jenjang_career_id"]
+    //                             .toString() ==
+    //                         null
+    //                     ? ""
+    //                     : data.additionalData["jenjang_career_id"].toString(),
+    //                 pendidikan:
+    //                     data.additionalData["pendidikan"].toString() == null
+    //                         ? ""
+    //                         : data.additionalData["pendidikan"].toString(),
+    //                 city_id: data.additionalData["city_id"].toString() == ""
+    //                     ? ""
+    //                     : data.additionalData["city_id"].toString(),
+    //                 pengalaman:
+    //                     data.additionalData["pengalaman_id"].toString() == null
+    //                         ? ""
+    //                         : data.additionalData["pengalaman_id"].toString(),
+    //                 rincian: data.additionalData["rincian"].toString() == null
+    //                     ? ""
+    //                     : data.additionalData["rincian"].toString(),
+    //                 kualifikasi:
+    //                     data.additionalData["kualifikasi"].toString() == null
+    //                         ? ""
+    //                         : data.additionalData["kualifikasi"].toString(),
+    //                 kuota: data.additionalData["kuota"].toString() == null
+    //                     ? ""
+    //                     : data.additionalData["kuota"].toString(),
+    //                 alamat: data.additionalData["alamat"].toString() == null
+    //                     ? ""
+    //                     : data.additionalData["alamat"].toString(),
+    //                 deskripsi:
+    //                     data.additionalData["deskripsi"].toString() == null
+    //                         ? ""
+    //                         : data.additionalData["deskripsi"].toString(),
+    //                 jenispekerjaan:
+    //                     data.additionalData["jenis_pekerjaan"].toString() ==
+    //                             null
+    //                         ? ""
+    //                         : data.additionalData["jenis_pekerjaan"].toString(),
+    //                 datePostEnd:
+    //                     data.additionalData["date_post_end"].toString() == null
+    //                         ? ""
+    //                         : data.additionalData["date_post_end"].toString(),
+    //                 directLink:
+    //                     data.additionalData["direct_link"].toString() == null
+    //                         ? ""
+    //                         : data.additionalData["direct_link"].toString(),
+    //                 id_employee:
+    //                     globalid_employee == null ? "" : globalid_employee,
+    //               )));
+    // });
     getCurrentLocation();
   }
 
@@ -416,6 +416,7 @@ class _HomeUserState extends State<HomeUser> {
 
   @override
   Widget build(BuildContext context) {
+    double scaleWidth = MediaQuery.of(context).size.width / 360;
     return Scaffold(
 //      appBar: AppBar(),
       body: Container(
@@ -883,11 +884,8 @@ class _HomeUserState extends State<HomeUser> {
                                   return Padding(
                                     padding: const EdgeInsets.all(8.0),
                                     child: Container(
-                                      height:
-                                          MediaQuery.of(context).size.height /
-                                              3,
-                                      width: MediaQuery.of(context).size.width /
-                                          2.2,
+                                      height: 100 * scaleWidth,
+                                      width: 140 * scaleWidth,
                                       child: InkWell(
                                         onTap: () {
                                           Get.toNamed(RouteName.detailMedia, arguments: xnews);
@@ -919,13 +917,8 @@ class _HomeUserState extends State<HomeUser> {
                                                 ),
                                                 child: Image.network(
                                                   xnews.foto,
-                                                  width: MediaQuery.of(context)
-                                                      .size
-                                                      .width,
-                                                  height: MediaQuery.of(context)
-                                                          .size
-                                                          .height /
-                                                      9,
+                                                  height: 70 * scaleWidth,
+                                                  width: 140 * scaleWidth,
                                                   fit: BoxFit.cover,
                                                 ),
                                               ),

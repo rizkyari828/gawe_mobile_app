@@ -566,15 +566,15 @@ class _VideoState extends State<Video> {
 
   void _showRatingAppDialog() {
     final _ratingDialog = RatingDialog(
-      ratingColor: Colors.amber,
-      title: 'Beri Penilaian',
+      starColor: Colors.amber,
+      title: Text('Beri Penilaian'),
       message:
-          'Ayo, berikan penilaianmu untuk membantu kami memberikan materi yang lebih baik lagi.',
+          Text('Ayo, berikan penilaianmu untuk membantu kami memberikan materi yang lebih baik lagi.'),
       image: Image.asset(
         "assets/images/devs.jpg",
         height: 100,
       ),
-      submitButton: 'Submit',
+      submitButtonText: 'Submit',
       onCancelled: () => print('cancelled'),
       onSubmitted: (response) {
         print('rating: ${response.rating}, '

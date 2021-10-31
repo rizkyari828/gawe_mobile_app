@@ -10,14 +10,14 @@ import 'package:gaweid2/modules/user/view/register/datadiri/datadiri1.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 import 'constant/constant.dart';
-import 'package:onesignal_flutter/onesignal_flutter.dart';
+// import 'package:onesignal_flutter/onesignal_flutter.dart';
 
 void main() {
-  WidgetsFlutterBinding.ensureInitialized();
-  OneSignal.shared.setLogLevel(OSLogLevel.verbose, OSLogLevel.none);
-  OneSignal.shared.setAppId("85accc5a-8084-4a43-9c52-1b47cd06c076");
-  OneSignal.shared.promptUserForPushNotificationPermission().then((accepted) {
-  });
+  // WidgetsFlutterBinding.ensureInitialized();
+  // OneSignal.shared.setLogLevel(OSLogLevel.verbose, OSLogLevel.none);
+  // OneSignal.shared.setAppId("85accc5a-8084-4a43-9c52-1b47cd06c076");
+  // OneSignal.shared.promptUserForPushNotificationPermission().then((accepted) {
+  // });
 
   runApp(MyApp());
 }

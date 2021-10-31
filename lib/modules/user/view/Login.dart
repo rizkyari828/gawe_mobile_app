@@ -12,7 +12,6 @@ import 'package:gaweid2/modules/user/view/register/Register_user.dart';
 import 'package:gaweid2/modules/user/view/register/LupaPassword.dart';
 import 'package:gaweid2/utils/SessionManager.dart';
 import 'package:gaweid2/utils/theme.dart';
-import 'package:onesignal_flutter/onesignal_flutter.dart';
 // import 'package:onesignal_flutter/onesignal_flutter.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:toast/toast.dart';
@@ -251,12 +250,12 @@ class _LoginState extends State<Login> {
     // TODO: implement initState
     super.initState();
     getPreferences();
-    OneSignal.shared.getDeviceState().then((deviceState) {
-      setState(() {
-        playerID = deviceState.userId;
-      });
-      print("DeviceState: ${deviceState.userId}");
-    });
+    // OneSignal.shared.getDeviceState().then((deviceState) {
+    //   setState(() {
+    //     playerID = deviceState.userId;
+    //   });
+    //   print("DeviceState: ${deviceState.userId}");
+    // });
     //signOut();
   }
 

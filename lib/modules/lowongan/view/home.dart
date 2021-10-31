@@ -1,7 +1,7 @@
 import 'dart:convert';
+import 'dart:io';
 
 import 'package:flutter/material.dart';
-import 'package:gaweid2/modules/lowongan/Component/share.dart';
 import 'package:gaweid2/modules/lowongan/models/lowongan_model_pagination.dart';
 import 'package:gaweid2/modules/lowongan/services/lowongan_service.dart';
 import 'package:gaweid2/network/NetworkProvider.dart';
@@ -13,7 +13,9 @@ import 'package:gaweid2/utils/theme.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:toast/toast.dart';
 import 'package:http/http.dart' as http;
-import 'package:flutter_share/flutter_share.dart';
+// import 'package:flutter_share/flutter_share.dart';
+import 'package:share_plus/share_plus.dart';
+import 'package:path_provider/path_provider.dart';
 
 class Home extends StatefulWidget {
   String globalidEmployee;
@@ -204,16 +206,23 @@ class _HomeState extends State<Home> {
                 itemBuilder: (c, i) {
                   final xlowongan = coin.data[i];
                   Future<void> share() async {
-
+                    final urlImage = xlowongan.logo;
+                    final url = Uri.parse(urlImage);
+                    final response = await http.get(url);
+                    final bytes = response.bodyBytes;
+                    final temp = await getTemporaryDirectory();
+                    final path = '${temp.path}/image.jpg';
+                    File(path).writeAsBytesSync(bytes);
+                    await Share.shareFiles([path], text: '${xlowongan.posisi} (${xlowongan.namaPerusahaan})\n https://gawe.id/lowongan/detail/${base64.encode(utf8.encode(xlowongan.idLowongan))}');
                     // Navigator.push(
                     //     context,
                     //     MaterialPageRoute(
                     //         builder: (context) => (Share())));
-                    await FlutterShare.share(
-                        title: 'Lowongan',
-                        text: '${xlowongan.posisi}',
-                        linkUrl: 'https://gawe.id/lowongan/detail/${base64.encode(utf8.encode(xlowongan.idLowongan))}',
-                        chooserTitle: 'Ayo segera lamar lowongan');
+                    // await FlutterShare.share(
+                    //     title: 'Lowongan',
+                    //     text: '${xlowongan.posisi}',
+                    //     linkUrl: 'https://gawe.id/lowongan/detail/${base64.encode(utf8.encode(xlowongan.idLowongan))}',
+                    //     chooserTitle: 'Ayo segera lamar lowongan');
                   }
                   return Card(
                     margin: new EdgeInsets.only(

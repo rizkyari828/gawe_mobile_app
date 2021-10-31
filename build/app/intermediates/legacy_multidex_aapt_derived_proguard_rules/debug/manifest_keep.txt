@@ -1,4 +1,4 @@
-# Referenced at /home/tama/Developer/Flutter Project/gaweid2/build/app/intermediates/merged_manifests/debug/AndroidManifest.xml:78
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\debug\AndroidManifest.xml:74
 -keep class androidx.core.app.CoreComponentFactory { <init>(); }
-# Referenced at /home/tama/Developer/Flutter Project/gaweid2/build/app/intermediates/merged_manifests/debug/AndroidManifest.xml:78
+# Referenced at D:\Developer\Flutter Project\gawe_mobile_app\build\app\intermediates\merged_manifests\debug\AndroidManifest.xml:74
 -keep class io.flutter.app.FlutterApplication { <init>(); }

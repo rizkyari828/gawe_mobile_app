@@ -1,0 +1,26 @@
+[
+    {
+        "merged": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\build\\geolocator\\intermediates\\res\\merged\\release\\layout\\notification_action.xml",
+        "source": "D:\\Users\\bsi50164\\.gradle\\caches\\transforms-2\\files-2.1\\6495c03b7c1f6b20365049e2189d2851\\core-1.2.0\\res\\layout\\notification_action.xml"
+    },
+    {
+        "merged": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\build\\geolocator\\intermediates\\res\\merged\\release\\layout\\notification_action_tombstone.xml",
+        "source": "D:\\Users\\bsi50164\\.gradle\\caches\\transforms-2\\files-2.1\\6495c03b7c1f6b20365049e2189d2851\\core-1.2.0\\res\\layout\\notification_action_tombstone.xml"
+    },
+    {
+        "merged": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\build\\geolocator\\intermediates\\res\\merged\\release\\layout\\notification_template_icon_group.xml",
+        "source": "D:\\Users\\bsi50164\\.gradle\\caches\\transforms-2\\files-2.1\\6495c03b7c1f6b20365049e2189d2851\\core-1.2.0\\res\\layout\\notification_template_icon_group.xml"
+    },
+    {
+        "merged": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\build\\geolocator\\intermediates\\res\\merged\\release\\layout\\notification_template_part_chronometer.xml",
+        "source": "D:\\Users\\bsi50164\\.gradle\\caches\\transforms-2\\files-2.1\\6495c03b7c1f6b20365049e2189d2851\\core-1.2.0\\res\\layout\\notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\build\\geolocator\\intermediates\\res\\merged\\release\\layout\\custom_dialog.xml",
+        "source": "D:\\Users\\bsi50164\\.gradle\\caches\\transforms-2\\files-2.1\\6495c03b7c1f6b20365049e2189d2851\\core-1.2.0\\res\\layout\\custom_dialog.xml"
+    },
+    {
+        "merged": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\build\\geolocator\\intermediates\\res\\merged\\release\\layout\\notification_template_part_time.xml",
+        "source": "D:\\Users\\bsi50164\\.gradle\\caches\\transforms-2\\files-2.1\\6495c03b7c1f6b20365049e2189d2851\\core-1.2.0\\res\\layout\\notification_template_part_time.xml"
+    }
+]

@@ -1,0 +1,4 @@
+#Fri Oct 29 18:22:32 ICT 2021
+base.0=D\:\\Developer\\Flutter Project\\gawe_mobile_app\\build\\app\\intermediates\\dex\\release\\shrunkDex\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
