@@ -477,15 +477,42 @@ class _VideoState extends State<Video> {
                                     : ListTile(
                                         leading: GestureDetector(
                                           onTap: () async {
-                                            Navigator.of(context).push(
-                                                new MaterialPageRoute(
-                                                    builder: (BuildContext
-                                                            context) =>
-                                                        Komentar(
-                                                            idMateri:
-                                                                widget.idMateri,
-                                                            email:
-                                                                widget.email)));
+                                            if(widget.video.statusAccess == "Terbuka"){
+                                              Navigator.push(
+                                                  context,
+                                                  MaterialPageRoute(
+                                                      builder: (context) => (Video(
+                                                        video: widget.video,
+                                                        email: widget.email,
+                                                        codeGenerate:
+                                                        widget.codeGenerate,
+                                                        kodeReferral:
+                                                        widget.kodeReferral,
+                                                        idMateri: widget.video
+                                                            .id,
+                                                      ))));
+                                            }else{
+                                              showDialog(
+                                                  context: context,
+                                                  builder: (BuildContext context) {
+                                                    return AlertDialog(
+                                                      title: Text("Oops!"),
+                                                      content: widget.video.statusRate == "ada"
+                                                          ? Text(
+                                                          "Kamu belum memberikan rating dan menyelesaikan materi sebelumnya.")
+                                                          : Text(
+                                                          "Kamu belum menyelesaikan materi sebelumnya."),
+                                                      actions: <Widget>[
+                                                        MaterialButton(
+                                                          onPressed: () {
+                                                            Navigator.pop(context);
+                                                          },
+                                                          child: Text("Ya"),
+                                                        ),
+                                                      ],
+                                                    );
+                                                  });
+                                            }
                                           },
                                           child: Container(
                                             height: 40.0,
@@ -698,20 +725,44 @@ class _MyWidgetState extends State<ItemList> {
                                 final materi = xmodul.materiContent[index2];
                                 return InkWell(
                                   onTap: () {
-                                    Navigator.pushReplacement(
-                                        context,
-                                        MaterialPageRoute(
-                                            builder: (context) => (Video(
-                                                  video: xmodul
-                                                      .materiContent[index2],
-                                                  email: widget.email,
-                                                  codeGenerate:
-                                                      widget.codeGenerate,
-                                                  kodeReferral:
-                                                      widget.kodeReferral,
-                                                  idMateri: xmodul
-                                                      .materiContent[index2].id,
-                                                ))));
+                                    if(materi.statusAccess == "Terbuka"){
+                                      Navigator.push(
+                                          context,
+                                          MaterialPageRoute(
+                                              builder: (context) => (Video(
+                                                video: xmodul
+                                                    .materiContent[index2],
+                                                email: widget.email,
+                                                codeGenerate:
+                                                widget.codeGenerate,
+                                                kodeReferral:
+                                                widget.kodeReferral,
+                                                idMateri: xmodul
+                                                    .materiContent[index2]
+                                                    .id,
+                                              ))));
+                                    }else{
+                                      showDialog(
+                                          context: context,
+                                          builder: (BuildContext context) {
+                                            return AlertDialog(
+                                              title: Text("Oops!"),
+                                              content: materi.statusRate == "ada"
+                                                  ? Text(
+                                                  "Kamu belum memberikan rating dan menyelesaikan materi sebelumnya.")
+                                                  : Text(
+                                                  "Kamu belum menyelesaikan materi sebelumnya."),
+                                              actions: <Widget>[
+                                                MaterialButton(
+                                                  onPressed: () {
+                                                    Navigator.pop(context);
+                                                  },
+                                                  child: Text("Ya"),
+                                                ),
+                                              ],
+                                            );
+                                          });
+                                    }
                                   },
                                   child: Card(
                                     elevation: 0.5,

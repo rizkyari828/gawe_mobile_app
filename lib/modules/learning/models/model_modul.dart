@@ -95,6 +95,8 @@ class MateriContent {
     this.accessCount,
     this.likeCount,
     this.commentCount,
+    this.statusAccess,
+    this.statusRate,
   });
 
   String id;
@@ -122,6 +124,8 @@ class MateriContent {
   int accessCount;
   int likeCount;
   int commentCount;
+  String statusAccess;
+  String statusRate;
 
   factory MateriContent.fromJson(Map<String, dynamic> json) => MateriContent(
     id: json["id"],
@@ -149,6 +153,8 @@ class MateriContent {
     accessCount : json["access_count"],
     likeCount : json["count_like"],
     commentCount : json["count_comment"],
+    statusAccess: json["status_access"],
+    statusRate: json["status_rate"],
   );
 
   Map<String, dynamic> toJson() => {
@@ -177,5 +183,7 @@ class MateriContent {
     "access_count": accessCount,
     "count_like": likeCount,
     "count_comment": commentCount,
+    "status_access": statusAccess,
+    "status_rate": statusRate,
   };
 }

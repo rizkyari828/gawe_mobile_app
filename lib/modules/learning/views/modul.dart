@@ -241,21 +241,45 @@ class _MyWidgetState extends State<ItemList> {
                                   final materi = xmodul.materiContent[index2];
                                   return InkWell(
                                     onTap: () {
-                                      Navigator.push(
-                                          context,
-                                          MaterialPageRoute(
-                                              builder: (context) => (Video(
-                                                    video: xmodul
-                                                        .materiContent[index2],
-                                                    email: widget.email,
-                                                    codeGenerate:
-                                                        widget.codeGenerate,
-                                                    kodeReferral:
-                                                        widget.kodeReferral,
-                                                    idMateri: xmodul
-                                                        .materiContent[index2]
-                                                        .id,
-                                                  ))));
+                                      if(materi.statusAccess == "Terbuka"){
+                                        Navigator.push(
+                                            context,
+                                            MaterialPageRoute(
+                                                builder: (context) => (Video(
+                                                  video: xmodul
+                                                      .materiContent[index2],
+                                                  email: widget.email,
+                                                  codeGenerate:
+                                                  widget.codeGenerate,
+                                                  kodeReferral:
+                                                  widget.kodeReferral,
+                                                  idMateri: xmodul
+                                                      .materiContent[index2]
+                                                      .id,
+                                                ))));
+                                      }else{
+                                        showDialog(
+                                            context: context,
+                                            builder: (BuildContext context) {
+                                              return AlertDialog(
+                                                title: Text("Oops!"),
+                                                content: materi.statusRate == "ada"
+                                                    ? Text(
+                                                    "Kamu belum memberikan rating dan menyelesaikan materi sebelumnya.")
+                                                    : Text(
+                                                    "Kamu belum menyelesaikan materi sebelumnya."),
+                                                actions: <Widget>[
+                                                  MaterialButton(
+                                                    onPressed: () {
+                                                      Navigator.pop(context);
+                                                    },
+                                                    child: Text("Ya"),
+                                                  ),
+                                                ],
+                                              );
+                                            });
+                                      }
+
                                     },
                                     child: Card(
                                       elevation: 0.5,
