@@ -1,27 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\build\\google_maps_flutter\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-es-rUS\\values-es-rUS.xml",
+            "outputFile": "E:\\Flutter Project\\gaweid2\\build\\google_maps_flutter\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-es-rUS\\values-es-rUS.xml",
             "map": [
                 {
-                    "source": "D:\\Users\\bsi50164\\.gradle\\caches\\transforms-2\\files-2.1\\af3bed9acadd4c2dac88bf0aa1da5ae7\\jetified-play-services-basement-17.0.0\\res\\values-es-rUS\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "251",
-                        "endColumns": "204",
-                        "endOffsets": "455"
-                    },
-                    "to": {
-                        "startLines": "10",
-                        "startColumns": "4",
-                        "startOffsets": "1298",
-                        "endColumns": "204",
-                        "endOffsets": "1498"
-                    }
-                },
-                {
-                    "source": "D:\\Users\\bsi50164\\.gradle\\caches\\transforms-2\\files-2.1\\b87ba235fece7fc1b9579d17e32608a6\\jetified-play-services-base-17.0.0\\res\\values-es-rUS\\values.xml",
+                    "source": "C:\\Users\\rizky\\.gradle\\caches\\transforms-2\\files-2.1\\b87ba235fece7fc1b9579d17e32608a6\\jetified-play-services-base-17.0.0\\res\\values-es-rUS\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -38,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "D:\\Users\\bsi50164\\.gradle\\caches\\transforms-2\\files-2.1\\6cfd5a471e459c692c574040b564bfe8\\core-1.1.0\\res\\values-es-rUS\\values-es-rUS.xml",
+                    "source": "C:\\Users\\rizky\\.gradle\\caches\\transforms-2\\files-2.1\\6cfd5a471e459c692c574040b564bfe8\\core-1.1.0\\res\\values-es-rUS\\values-es-rUS.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -52,32 +35,32 @@
                         "startOffsets": "2923",
                         "endColumns": "100",
                         "endOffsets": "3019"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\rizky\\.gradle\\caches\\transforms-2\\files-2.1\\af3bed9acadd4c2dac88bf0aa1da5ae7\\jetified-play-services-basement-17.0.0\\res\\values-es-rUS\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "251",
+                        "endColumns": "204",
+                        "endOffsets": "455"
+                    },
+                    "to": {
+                        "startLines": "10",
+                        "startColumns": "4",
+                        "startOffsets": "1298",
+                        "endColumns": "204",
+                        "endOffsets": "1498"
                     }
                 }
             ]
         },
         {
-            "outputFile": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\build\\google_maps_flutter\\intermediates\\res\\merged\\release\\values-es-rUS\\values-es-rUS.xml",
+            "outputFile": "E:\\Flutter Project\\gaweid2\\build\\google_maps_flutter\\intermediates\\res\\merged\\release\\values-es-rUS\\values-es-rUS.xml",
             "map": [
                 {
-                    "source": "D:\\Users\\bsi50164\\.gradle\\caches\\transforms-2\\files-2.1\\af3bed9acadd4c2dac88bf0aa1da5ae7\\jetified-play-services-basement-17.0.0\\res\\values-es-rUS\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "251",
-                        "endColumns": "204",
-                        "endOffsets": "455"
-                    },
-                    "to": {
-                        "startLines": "10",
-                        "startColumns": "4",
-                        "startOffsets": "1298",
-                        "endColumns": "204",
-                        "endOffsets": "1498"
-                    }
-                },
-                {
-                    "source": "D:\\Users\\bsi50164\\.gradle\\caches\\transforms-2\\files-2.1\\b87ba235fece7fc1b9579d17e32608a6\\jetified-play-services-base-17.0.0\\res\\values-es-rUS\\values.xml",
+                    "source": "C:\\Users\\rizky\\.gradle\\caches\\transforms-2\\files-2.1\\b87ba235fece7fc1b9579d17e32608a6\\jetified-play-services-base-17.0.0\\res\\values-es-rUS\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -94,7 +77,7 @@
                     }
                 },
                 {
-                    "source": "D:\\Users\\bsi50164\\.gradle\\caches\\transforms-2\\files-2.1\\6cfd5a471e459c692c574040b564bfe8\\core-1.1.0\\res\\values-es-rUS\\values-es-rUS.xml",
+                    "source": "C:\\Users\\rizky\\.gradle\\caches\\transforms-2\\files-2.1\\6cfd5a471e459c692c574040b564bfe8\\core-1.1.0\\res\\values-es-rUS\\values-es-rUS.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -108,6 +91,23 @@
                         "startOffsets": "2923",
                         "endColumns": "100",
                         "endOffsets": "3019"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\rizky\\.gradle\\caches\\transforms-2\\files-2.1\\af3bed9acadd4c2dac88bf0aa1da5ae7\\jetified-play-services-basement-17.0.0\\res\\values-es-rUS\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "251",
+                        "endColumns": "204",
+                        "endOffsets": "455"
+                    },
+                    "to": {
+                        "startLines": "10",
+                        "startColumns": "4",
+                        "startOffsets": "1298",
+                        "endColumns": "204",
+                        "endOffsets": "1498"
                     }
                 }
             ]

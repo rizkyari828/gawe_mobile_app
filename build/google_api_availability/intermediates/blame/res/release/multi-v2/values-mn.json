@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\build\\google_api_availability\\intermediates\\res\\merged\\release\\values-mn\\values-mn.xml",
+            "outputFile": "E:\\Flutter Project\\gaweid2\\build\\google_api_availability\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-mn\\values-mn.xml",
             "map": [
                 {
-                    "source": "D:\\Users\\bsi50164\\.gradle\\caches\\transforms-2\\files-2.1\\7b54db36059fe07b8b0103ed28b7eec2\\jetified-play-services-base-17.2.1\\res\\values-mn\\values.xml",
+                    "source": "C:\\Users\\rizky\\.gradle\\caches\\transforms-2\\files-2.1\\7b54db36059fe07b8b0103ed28b7eec2\\jetified-play-services-base-17.2.1\\res\\values-mn\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "D:\\Users\\bsi50164\\.gradle\\caches\\transforms-2\\files-2.1\\262ff3c373fd42b5fc020493b084bbf9\\jetified-play-services-basement-17.2.1\\res\\values-mn\\values.xml",
+                    "source": "C:\\Users\\rizky\\.gradle\\caches\\transforms-2\\files-2.1\\6e571c818571730d0f9cabc3bfbba724\\jetified-play-services-basement-17.2.1\\res\\values-mn\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "D:\\Users\\bsi50164\\.gradle\\caches\\transforms-2\\files-2.1\\6495c03b7c1f6b20365049e2189d2851\\core-1.2.0\\res\\values-mn\\values-mn.xml",
+                    "source": "C:\\Users\\rizky\\.gradle\\caches\\transforms-2\\files-2.1\\6495c03b7c1f6b20365049e2189d2851\\core-1.2.0\\res\\values-mn\\values-mn.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -57,10 +57,10 @@
             ]
         },
         {
-            "outputFile": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\build\\google_api_availability\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-mn\\values-mn.xml",
+            "outputFile": "E:\\Flutter Project\\gaweid2\\build\\google_api_availability\\intermediates\\res\\merged\\release\\values-mn\\values-mn.xml",
             "map": [
                 {
-                    "source": "D:\\Users\\bsi50164\\.gradle\\caches\\transforms-2\\files-2.1\\7b54db36059fe07b8b0103ed28b7eec2\\jetified-play-services-base-17.2.1\\res\\values-mn\\values.xml",
+                    "source": "C:\\Users\\rizky\\.gradle\\caches\\transforms-2\\files-2.1\\7b54db36059fe07b8b0103ed28b7eec2\\jetified-play-services-base-17.2.1\\res\\values-mn\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -77,7 +77,7 @@
                     }
                 },
                 {
-                    "source": "D:\\Users\\bsi50164\\.gradle\\caches\\transforms-2\\files-2.1\\262ff3c373fd42b5fc020493b084bbf9\\jetified-play-services-basement-17.2.1\\res\\values-mn\\values.xml",
+                    "source": "C:\\Users\\rizky\\.gradle\\caches\\transforms-2\\files-2.1\\6e571c818571730d0f9cabc3bfbba724\\jetified-play-services-basement-17.2.1\\res\\values-mn\\values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -94,7 +94,7 @@
                     }
                 },
                 {
-                    "source": "D:\\Users\\bsi50164\\.gradle\\caches\\transforms-2\\files-2.1\\6495c03b7c1f6b20365049e2189d2851\\core-1.2.0\\res\\values-mn\\values-mn.xml",
+                    "source": "C:\\Users\\rizky\\.gradle\\caches\\transforms-2\\files-2.1\\6495c03b7c1f6b20365049e2189d2851\\core-1.2.0\\res\\values-mn\\values-mn.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

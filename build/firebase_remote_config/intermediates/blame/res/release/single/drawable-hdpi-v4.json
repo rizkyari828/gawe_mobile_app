@@ -1,22 +1,22 @@
 [
     {
-        "merged": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\build\\firebase_remote_config\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\notification_bg_low_normal.9.png",
-        "source": "D:\\Users\\bsi50164\\.gradle\\caches\\transforms-2\\files-2.1\\6495c03b7c1f6b20365049e2189d2851\\core-1.2.0\\res\\drawable-hdpi-v4\\notification_bg_low_normal.9.png"
+        "merged": "E:\\Flutter Project\\gaweid2\\build\\firebase_remote_config\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\notification_bg_normal_pressed.9.png",
+        "source": "C:\\Users\\rizky\\.gradle\\caches\\transforms-2\\files-2.1\\6495c03b7c1f6b20365049e2189d2851\\core-1.2.0\\res\\drawable-hdpi-v4\\notification_bg_normal_pressed.9.png"
     },
     {
-        "merged": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\build\\firebase_remote_config\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\notification_bg_normal_pressed.9.png",
-        "source": "D:\\Users\\bsi50164\\.gradle\\caches\\transforms-2\\files-2.1\\6495c03b7c1f6b20365049e2189d2851\\core-1.2.0\\res\\drawable-hdpi-v4\\notification_bg_normal_pressed.9.png"
+        "merged": "E:\\Flutter Project\\gaweid2\\build\\firebase_remote_config\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\notification_bg_low_pressed.9.png",
+        "source": "C:\\Users\\rizky\\.gradle\\caches\\transforms-2\\files-2.1\\6495c03b7c1f6b20365049e2189d2851\\core-1.2.0\\res\\drawable-hdpi-v4\\notification_bg_low_pressed.9.png"
     },
     {
-        "merged": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\build\\firebase_remote_config\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\notify_panel_notification_icon_bg.png",
-        "source": "D:\\Users\\bsi50164\\.gradle\\caches\\transforms-2\\files-2.1\\6495c03b7c1f6b20365049e2189d2851\\core-1.2.0\\res\\drawable-hdpi-v4\\notify_panel_notification_icon_bg.png"
+        "merged": "E:\\Flutter Project\\gaweid2\\build\\firebase_remote_config\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\notification_bg_normal.9.png",
+        "source": "C:\\Users\\rizky\\.gradle\\caches\\transforms-2\\files-2.1\\6495c03b7c1f6b20365049e2189d2851\\core-1.2.0\\res\\drawable-hdpi-v4\\notification_bg_normal.9.png"
     },
     {
-        "merged": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\build\\firebase_remote_config\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\notification_bg_low_pressed.9.png",
-        "source": "D:\\Users\\bsi50164\\.gradle\\caches\\transforms-2\\files-2.1\\6495c03b7c1f6b20365049e2189d2851\\core-1.2.0\\res\\drawable-hdpi-v4\\notification_bg_low_pressed.9.png"
+        "merged": "E:\\Flutter Project\\gaweid2\\build\\firebase_remote_config\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\notify_panel_notification_icon_bg.png",
+        "source": "C:\\Users\\rizky\\.gradle\\caches\\transforms-2\\files-2.1\\6495c03b7c1f6b20365049e2189d2851\\core-1.2.0\\res\\drawable-hdpi-v4\\notify_panel_notification_icon_bg.png"
     },
     {
-        "merged": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\build\\firebase_remote_config\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\notification_bg_normal.9.png",
-        "source": "D:\\Users\\bsi50164\\.gradle\\caches\\transforms-2\\files-2.1\\6495c03b7c1f6b20365049e2189d2851\\core-1.2.0\\res\\drawable-hdpi-v4\\notification_bg_normal.9.png"
+        "merged": "E:\\Flutter Project\\gaweid2\\build\\firebase_remote_config\\intermediates\\res\\merged\\release\\drawable-hdpi-v4\\notification_bg_low_normal.9.png",
+        "source": "C:\\Users\\rizky\\.gradle\\caches\\transforms-2\\files-2.1\\6495c03b7c1f6b20365049e2189d2851\\core-1.2.0\\res\\drawable-hdpi-v4\\notification_bg_low_normal.9.png"
     }
 ]

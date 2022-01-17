@@ -265,7 +265,7 @@ class _MyWidgetState extends State<ItemList> {
                                                 title: Text("Oops!"),
                                                 content: materi.statusRate == "ada"
                                                     ? Text(
-                                                    "Kamu belum memberikan rating dan menyelesaikan materi sebelumnya.")
+                                                    "Pastikan kamu telah memberikan rating dan menyelesaikan materi sebelumnya.")
                                                     : Text(
                                                     "Kamu belum menyelesaikan materi sebelumnya."),
                                                 actions: <Widget>[
@@ -279,7 +279,6 @@ class _MyWidgetState extends State<ItemList> {
                                               );
                                             });
                                       }
-
                                     },
                                     child: Card(
                                       elevation: 0.5,

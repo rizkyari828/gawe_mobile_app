@@ -1,66 +1,66 @@
 [
     {
-        "merged": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-hdpi_launcher_icon.png.flat",
-        "source": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\android\\app\\src\\main\\res\\mipmap-hdpi\\launcher_icon.png"
+        "merged": "E:\\Flutter Project\\gaweid2\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_launcher_icon.png.flat",
+        "source": "E:\\Flutter Project\\gaweid2\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\launcher_icon.png"
     },
     {
-        "merged": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\android\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "E:\\Flutter Project\\gaweid2\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "E:\\Flutter Project\\gaweid2\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+        "merged": "E:\\Flutter Project\\gaweid2\\build\\app\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_stat_onesignal_default.png.flat",
+        "source": "E:\\Flutter Project\\gaweid2\\android\\app\\src\\main\\res\\drawable-xxhdpi\\ic_stat_onesignal_default.png"
     },
     {
-        "merged": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\build\\app\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_stat_onesignal_default.png.flat",
-        "source": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\android\\app\\src\\main\\res\\drawable-xhdpi\\ic_stat_onesignal_default.png"
+        "merged": "E:\\Flutter Project\\gaweid2\\build\\app\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_stat_onesignal_default.png.flat",
+        "source": "E:\\Flutter Project\\gaweid2\\android\\app\\src\\main\\res\\drawable-hdpi\\ic_stat_onesignal_default.png"
     },
     {
-        "merged": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\build\\app\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_stat_onesignal_default.png.flat",
-        "source": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\android\\app\\src\\main\\res\\drawable-xxhdpi\\ic_stat_onesignal_default.png"
+        "merged": "E:\\Flutter Project\\gaweid2\\build\\app\\intermediates\\res\\merged\\debug\\drawable_launch_background.xml.flat",
+        "source": "E:\\Flutter Project\\gaweid2\\android\\app\\src\\main\\res\\drawable\\launch_background.xml"
     },
     {
-        "merged": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\build\\app\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_stat_onesignal_default.png.flat",
-        "source": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\android\\app\\src\\main\\res\\drawable-hdpi\\ic_stat_onesignal_default.png"
+        "merged": "E:\\Flutter Project\\gaweid2\\build\\app\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_stat_onesignal_default.png.flat",
+        "source": "E:\\Flutter Project\\gaweid2\\android\\app\\src\\main\\res\\drawable-mdpi\\ic_stat_onesignal_default.png"
     },
     {
-        "merged": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "E:\\Flutter Project\\gaweid2\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_launcher_icon.png.flat",
+        "source": "E:\\Flutter Project\\gaweid2\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\launcher_icon.png"
     },
     {
-        "merged": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\build\\app\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_stat_onesignal_default.png.flat",
-        "source": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\android\\app\\src\\main\\res\\drawable-mdpi\\ic_stat_onesignal_default.png"
+        "merged": "E:\\Flutter Project\\gaweid2\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "E:\\Flutter Project\\gaweid2\\android\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\build\\app\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_stat_onesignal_default.png.flat",
-        "source": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\android\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_stat_onesignal_default.png"
+        "merged": "E:\\Flutter Project\\gaweid2\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "E:\\Flutter Project\\gaweid2\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "E:\\Flutter Project\\gaweid2\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-hdpi_launcher_icon.png.flat",
+        "source": "E:\\Flutter Project\\gaweid2\\android\\app\\src\\main\\res\\mipmap-hdpi\\launcher_icon.png"
     },
     {
-        "merged": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\build\\app\\intermediates\\res\\merged\\debug\\drawable_launch_background.xml.flat",
-        "source": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\android\\app\\src\\main\\res\\drawable\\launch_background.xml"
+        "merged": "E:\\Flutter Project\\gaweid2\\build\\app\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_stat_onesignal_default.png.flat",
+        "source": "E:\\Flutter Project\\gaweid2\\android\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_stat_onesignal_default.png"
     },
     {
-        "merged": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-mdpi_launcher_icon.png.flat",
-        "source": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\android\\app\\src\\main\\res\\mipmap-mdpi\\launcher_icon.png"
+        "merged": "E:\\Flutter Project\\gaweid2\\build\\app\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_stat_onesignal_default.png.flat",
+        "source": "E:\\Flutter Project\\gaweid2\\android\\app\\src\\main\\res\\drawable-xhdpi\\ic_stat_onesignal_default.png"
     },
     {
-        "merged": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_launcher_icon.png.flat",
-        "source": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\launcher_icon.png"
+        "merged": "E:\\Flutter Project\\gaweid2\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "E:\\Flutter Project\\gaweid2\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_launcher_icon.png.flat",
-        "source": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\launcher_icon.png"
+        "merged": "E:\\Flutter Project\\gaweid2\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "E:\\Flutter Project\\gaweid2\\android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_launcher_icon.png.flat",
-        "source": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\android\\app\\src\\main\\res\\mipmap-xhdpi\\launcher_icon.png"
+        "merged": "E:\\Flutter Project\\gaweid2\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_launcher_icon.png.flat",
+        "source": "E:\\Flutter Project\\gaweid2\\android\\app\\src\\main\\res\\mipmap-xhdpi\\launcher_icon.png"
     },
     {
-        "merged": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "E:\\Flutter Project\\gaweid2\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-mdpi_launcher_icon.png.flat",
+        "source": "E:\\Flutter Project\\gaweid2\\android\\app\\src\\main\\res\\mipmap-mdpi\\launcher_icon.png"
     }
 ]

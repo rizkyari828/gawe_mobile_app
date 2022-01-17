@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\build\\google_api_availability\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-fi\\values-fi.xml",
+            "outputFile": "E:\\Flutter Project\\gaweid2\\build\\google_api_availability\\intermediates\\res\\merged\\release\\values-fi\\values-fi.xml",
             "map": [
                 {
-                    "source": "D:\\Users\\bsi50164\\.gradle\\caches\\transforms-2\\files-2.1\\7b54db36059fe07b8b0103ed28b7eec2\\jetified-play-services-base-17.2.1\\res\\values-fi\\values.xml",
+                    "source": "C:\\Users\\rizky\\.gradle\\caches\\transforms-2\\files-2.1\\7b54db36059fe07b8b0103ed28b7eec2\\jetified-play-services-base-17.2.1\\res\\values-fi\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -21,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "D:\\Users\\bsi50164\\.gradle\\caches\\transforms-2\\files-2.1\\262ff3c373fd42b5fc020493b084bbf9\\jetified-play-services-basement-17.2.1\\res\\values-fi\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "208",
-                        "endOffsets": "455"
-                    },
-                    "to": {
-                        "startLines": "10",
-                        "startColumns": "4",
-                        "startOffsets": "1256",
-                        "endColumns": "208",
-                        "endOffsets": "1460"
-                    }
-                },
-                {
-                    "source": "D:\\Users\\bsi50164\\.gradle\\caches\\transforms-2\\files-2.1\\6495c03b7c1f6b20365049e2189d2851\\core-1.2.0\\res\\values-fi\\values-fi.xml",
+                    "source": "C:\\Users\\rizky\\.gradle\\caches\\transforms-2\\files-2.1\\6495c03b7c1f6b20365049e2189d2851\\core-1.2.0\\res\\values-fi\\values-fi.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -52,15 +35,32 @@
                         "startOffsets": "2765",
                         "endColumns": "100",
                         "endOffsets": "2861"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\rizky\\.gradle\\caches\\transforms-2\\files-2.1\\6e571c818571730d0f9cabc3bfbba724\\jetified-play-services-basement-17.2.1\\res\\values-fi\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "208",
+                        "endOffsets": "455"
+                    },
+                    "to": {
+                        "startLines": "10",
+                        "startColumns": "4",
+                        "startOffsets": "1256",
+                        "endColumns": "208",
+                        "endOffsets": "1460"
                     }
                 }
             ]
         },
         {
-            "outputFile": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\build\\google_api_availability\\intermediates\\res\\merged\\release\\values-fi\\values-fi.xml",
+            "outputFile": "E:\\Flutter Project\\gaweid2\\build\\google_api_availability\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-fi\\values-fi.xml",
             "map": [
                 {
-                    "source": "D:\\Users\\bsi50164\\.gradle\\caches\\transforms-2\\files-2.1\\7b54db36059fe07b8b0103ed28b7eec2\\jetified-play-services-base-17.2.1\\res\\values-fi\\values.xml",
+                    "source": "C:\\Users\\rizky\\.gradle\\caches\\transforms-2\\files-2.1\\7b54db36059fe07b8b0103ed28b7eec2\\jetified-play-services-base-17.2.1\\res\\values-fi\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -77,24 +77,7 @@
                     }
                 },
                 {
-                    "source": "D:\\Users\\bsi50164\\.gradle\\caches\\transforms-2\\files-2.1\\262ff3c373fd42b5fc020493b084bbf9\\jetified-play-services-basement-17.2.1\\res\\values-fi\\values.xml",
-                    "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "208",
-                        "endOffsets": "455"
-                    },
-                    "to": {
-                        "startLines": "10",
-                        "startColumns": "4",
-                        "startOffsets": "1256",
-                        "endColumns": "208",
-                        "endOffsets": "1460"
-                    }
-                },
-                {
-                    "source": "D:\\Users\\bsi50164\\.gradle\\caches\\transforms-2\\files-2.1\\6495c03b7c1f6b20365049e2189d2851\\core-1.2.0\\res\\values-fi\\values-fi.xml",
+                    "source": "C:\\Users\\rizky\\.gradle\\caches\\transforms-2\\files-2.1\\6495c03b7c1f6b20365049e2189d2851\\core-1.2.0\\res\\values-fi\\values-fi.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -108,6 +91,23 @@
                         "startOffsets": "2765",
                         "endColumns": "100",
                         "endOffsets": "2861"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\rizky\\.gradle\\caches\\transforms-2\\files-2.1\\6e571c818571730d0f9cabc3bfbba724\\jetified-play-services-basement-17.2.1\\res\\values-fi\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "208",
+                        "endOffsets": "455"
+                    },
+                    "to": {
+                        "startLines": "10",
+                        "startColumns": "4",
+                        "startOffsets": "1256",
+                        "endColumns": "208",
+                        "endOffsets": "1460"
                     }
                 }
             ]

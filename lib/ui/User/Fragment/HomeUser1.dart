@@ -15,7 +15,6 @@ import 'package:gaweid2/modules/lowongan/view/detail_lowongan.dart';
 import 'package:gaweid2/modules/lowongan/view/lowongan.dart';
 // import 'package:gaweid2/ui/learning/kodelearning.dart';
 import 'package:gaweid2/modules/learning/views/landing.dart';
-// import 'package:gaweid2/ui/learning/video_materi.dart';
 import 'package:gaweid2/utils/SessionManager.dart';
 import 'package:gaweid2/utils/theme.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';

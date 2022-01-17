@@ -3,6 +3,6 @@
 3    package="de.ffuf.in_app_update" >
 4
 5    <uses-sdk android:minSdkVersion="16" />
-5-->D:\Developer\flutter\.pub-cache\hosted\pub.dartlang.org\in_app_update-2.0.0\android\src\main\AndroidManifest.xml
+5-->C:\flutter\.pub-cache\hosted\pub.dartlang.org\in_app_update-2.0.0\android\src\main\AndroidManifest.xml
 6
 7</manifest>

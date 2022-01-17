@@ -1,18 +1,18 @@
 [
     {
-        "merged": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\build\\location_permissions\\intermediates\\res\\merged\\release\\layout-v21\\notification_action_tombstone.xml",
-        "source": "D:\\Users\\bsi50164\\.gradle\\caches\\transforms-2\\files-2.1\\6cfd5a471e459c692c574040b564bfe8\\core-1.1.0\\res\\layout-v21\\notification_action_tombstone.xml"
+        "merged": "E:\\Flutter Project\\gaweid2\\build\\location_permissions\\intermediates\\res\\merged\\release\\layout-v21\\notification_action.xml",
+        "source": "C:\\Users\\rizky\\.gradle\\caches\\transforms-2\\files-2.1\\6cfd5a471e459c692c574040b564bfe8\\core-1.1.0\\res\\layout-v21\\notification_action.xml"
     },
     {
-        "merged": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\build\\location_permissions\\intermediates\\res\\merged\\release\\layout-v21\\notification_template_icon_group.xml",
-        "source": "D:\\Users\\bsi50164\\.gradle\\caches\\transforms-2\\files-2.1\\6cfd5a471e459c692c574040b564bfe8\\core-1.1.0\\res\\layout-v21\\notification_template_icon_group.xml"
+        "merged": "E:\\Flutter Project\\gaweid2\\build\\location_permissions\\intermediates\\res\\merged\\release\\layout-v21\\notification_template_custom_big.xml",
+        "source": "C:\\Users\\rizky\\.gradle\\caches\\transforms-2\\files-2.1\\6cfd5a471e459c692c574040b564bfe8\\core-1.1.0\\res\\layout-v21\\notification_template_custom_big.xml"
     },
     {
-        "merged": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\build\\location_permissions\\intermediates\\res\\merged\\release\\layout-v21\\notification_action.xml",
-        "source": "D:\\Users\\bsi50164\\.gradle\\caches\\transforms-2\\files-2.1\\6cfd5a471e459c692c574040b564bfe8\\core-1.1.0\\res\\layout-v21\\notification_action.xml"
+        "merged": "E:\\Flutter Project\\gaweid2\\build\\location_permissions\\intermediates\\res\\merged\\release\\layout-v21\\notification_template_icon_group.xml",
+        "source": "C:\\Users\\rizky\\.gradle\\caches\\transforms-2\\files-2.1\\6cfd5a471e459c692c574040b564bfe8\\core-1.1.0\\res\\layout-v21\\notification_template_icon_group.xml"
     },
     {
-        "merged": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\build\\location_permissions\\intermediates\\res\\merged\\release\\layout-v21\\notification_template_custom_big.xml",
-        "source": "D:\\Users\\bsi50164\\.gradle\\caches\\transforms-2\\files-2.1\\6cfd5a471e459c692c574040b564bfe8\\core-1.1.0\\res\\layout-v21\\notification_template_custom_big.xml"
+        "merged": "E:\\Flutter Project\\gaweid2\\build\\location_permissions\\intermediates\\res\\merged\\release\\layout-v21\\notification_action_tombstone.xml",
+        "source": "C:\\Users\\rizky\\.gradle\\caches\\transforms-2\\files-2.1\\6cfd5a471e459c692c574040b564bfe8\\core-1.1.0\\res\\layout-v21\\notification_action_tombstone.xml"
     }
 ]

@@ -44,6 +44,7 @@ class _TestState extends State<Test> {
       globalid_employee = "";
   var status = false;
   var mystatus;
+  static int timer = 180;
   BaseEndPoint network = NetworkProvider();
 
   String radioItem = '';
@@ -92,6 +93,8 @@ class _TestState extends State<Test> {
     print(widget.emailId);
     print(globalEmail);
     print(widget.remidial);
+    print(widget.video.timer);
+
     // loading = false;
     final jsonString = await http
         .post(NetworkConfig().baseUrl + "apps_learning/startLearning", body: {
@@ -118,13 +121,16 @@ class _TestState extends State<Test> {
       soalSekarang = soalTest.soalSekarang.toString();
       insertId = soalTest.insertId.toString();
       message = soalTest.message.toString();
+      timer = widget.video.timer;
     });
   }
 
-  Duration _duration = Duration(seconds: 180);
+
   GlobalKey<ScaffoldState> _key = GlobalKey();
   @override
   Widget build(BuildContext context) {
+    Duration _duration = Duration(seconds: widget.video.timer);
+
     return Scaffold(
       resizeToAvoidBottomInset: false,
       body: Stack(
@@ -134,6 +140,7 @@ class _TestState extends State<Test> {
             height: MediaQuery.of(context).size.height,
             decoration: new BoxDecoration(color: mainColor),
           ),
+
           Container(
             margin: EdgeInsets.only(
               top: MediaQuery.of(context).size.height / 9,
@@ -153,13 +160,15 @@ class _TestState extends State<Test> {
                               fontWeight: FontWeight.bold,
                               color: Colors.white),
                           onDone: () {
-                            Navigator.of(context)
-                                .pushReplacement(new MaterialPageRoute(
+                             Navigator.of(context).pushReplacement(new MaterialPageRoute(
                               builder: (BuildContext context) => Test(
                                 idJenis: widget.idJenis,
                                 idMateri: widget.idMateri,
                                 emailId: globalEmail,
                                 codeGenerate: widget.codeGenerate,
+                                video: widget.video,
+                                kodeReferral: widget.kodeReferral,
+                                remidial: '0',
                               ),
                             ));
                           },

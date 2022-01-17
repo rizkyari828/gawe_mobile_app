@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\build\\flutter_plugin_android_lifecycle\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-pt\\values-pt.xml",
+            "outputFile": "E:\\Flutter Project\\gaweid2\\build\\flutter_plugin_android_lifecycle\\intermediates\\res\\merged\\release\\values-pt\\values-pt.xml",
             "map": [
                 {
-                    "source": "D:\\Users\\bsi50164\\.gradle\\caches\\transforms-2\\files-2.1\\6cfd5a471e459c692c574040b564bfe8\\core-1.1.0\\res\\values-pt\\values-pt.xml",
+                    "source": "C:\\Users\\rizky\\.gradle\\caches\\transforms-2\\files-2.1\\6cfd5a471e459c692c574040b564bfe8\\core-1.1.0\\res\\values-pt\\values-pt.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -16,10 +16,10 @@
             ]
         },
         {
-            "outputFile": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\build\\flutter_plugin_android_lifecycle\\intermediates\\res\\merged\\release\\values-pt\\values-pt.xml",
+            "outputFile": "E:\\Flutter Project\\gaweid2\\build\\flutter_plugin_android_lifecycle\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-pt\\values-pt.xml",
             "map": [
                 {
-                    "source": "D:\\Users\\bsi50164\\.gradle\\caches\\transforms-2\\files-2.1\\6cfd5a471e459c692c574040b564bfe8\\core-1.1.0\\res\\values-pt\\values-pt.xml",
+                    "source": "C:\\Users\\rizky\\.gradle\\caches\\transforms-2\\files-2.1\\6cfd5a471e459c692c574040b564bfe8\\core-1.1.0\\res\\values-pt\\values-pt.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

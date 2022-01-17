@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\build\\location_permissions\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-lo\\values-lo.xml",
+            "outputFile": "E:\\Flutter Project\\gaweid2\\build\\location_permissions\\intermediates\\incremental\\mergeReleaseResources\\merged.dir\\values-lo\\values-lo.xml",
             "map": [
                 {
-                    "source": "D:\\Users\\bsi50164\\.gradle\\caches\\transforms-2\\files-2.1\\6cfd5a471e459c692c574040b564bfe8\\core-1.1.0\\res\\values-lo\\values-lo.xml",
+                    "source": "C:\\Users\\rizky\\.gradle\\caches\\transforms-2\\files-2.1\\6cfd5a471e459c692c574040b564bfe8\\core-1.1.0\\res\\values-lo\\values-lo.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -16,10 +16,10 @@
             ]
         },
         {
-            "outputFile": "D:\\Developer\\Flutter Project\\gawe_mobile_app\\build\\location_permissions\\intermediates\\res\\merged\\release\\values-lo\\values-lo.xml",
+            "outputFile": "E:\\Flutter Project\\gaweid2\\build\\location_permissions\\intermediates\\res\\merged\\release\\values-lo\\values-lo.xml",
             "map": [
                 {
-                    "source": "D:\\Users\\bsi50164\\.gradle\\caches\\transforms-2\\files-2.1\\6cfd5a471e459c692c574040b564bfe8\\core-1.1.0\\res\\values-lo\\values-lo.xml",
+                    "source": "C:\\Users\\rizky\\.gradle\\caches\\transforms-2\\files-2.1\\6cfd5a471e459c692c574040b564bfe8\\core-1.1.0\\res\\values-lo\\values-lo.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
